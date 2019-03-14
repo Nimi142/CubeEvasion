@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="" />
+    <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,13 +16,13 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="2176">
-                <caret line="128" column="25" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="25" />
+              <first_editor relative-caret-position="221">
+                <caret line="46" column="94" selection-start-line="46" selection-start-column="94" selection-end-line="46" selection-end-column="94" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor />
+              <second_editor relative-caret-position="-119" />
             </state>
           </provider>
         </entry>
@@ -41,13 +43,13 @@
         <entry file="file://$PROJECT_DIR$/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="316">
+              <first_editor relative-caret-position="374">
                 <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-75" />
+              <second_editor relative-caret-position="-17" />
             </state>
           </provider>
         </entry>
@@ -82,7 +84,6 @@
       <find>for x in range(0,len(lvl))</find>
       <find>for y in range(0,len(lvl[x])):</find>
       <find>for y in range(0, len(lvl[x])):</find>
-      <find>for y in range(0,len(lvl[x])):</find>
       <find>for x in range(0,len(lvl)):</find>
       <find>blocks =</find>
       <find>Block(B</find>
@@ -93,6 +94,7 @@
       <find>kill</find>
       <find>tTime =</find>
       <find>Atari</find>
+      <find>pr</find>
     </findStrings>
     <replaceStrings>
       <replace>randomint</replace>
@@ -116,11 +118,13 @@
       <replace>for y in range(0,len(lvl[x])):</replace>
       <replace>self</replace>
       <replace>self.screen</replace>
-      <replace>for y in range(1,len(lvl[x])):</replace>
       <replace>Block.Block(</replace>
       <replace>draw(screen</replace>
       <replace>Transition</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -138,23 +142,14 @@
     <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,7 +223,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006605" side_tool="true" weight="0.39892906" />
       <window_info anchor="bottom" id="Python Console" order="10" />
@@ -334,16 +329,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ca4r.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="17">
-            <caret line="1" column="22" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ca4r.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -357,21 +343,19 @@
     <entry file="file://$PROJECT_DIR$/local-filename.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Block.py">
+    <entry file="file://$PROJECT_DIR$/AtariLogo.png" />
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="316">
-            <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
+          <first_editor relative-caret-position="221">
+            <caret line="46" column="94" selection-start-line="46" selection-start-column="94" selection-end-line="46" selection-end-column="94" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-75" />
+          <second_editor relative-caret-position="-119" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AtariLogo.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ImageBackGround.py">
       <provider selected="true" editor-type-id="live-pycharm">
@@ -383,16 +367,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="2176">
-            <caret line="128" column="25" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="25" />
+          <first_editor relative-caret-position="374">
+            <caret line="23" column="59" selection-start-line="23" selection-start-column="59" selection-end-line="23" selection-end-column="59" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor />
+          <second_editor relative-caret-position="-17" />
         </state>
       </provider>
     </entry>
