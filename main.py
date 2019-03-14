@@ -44,7 +44,7 @@ def makeRow(x,amountRows = 16):
             if ry != 0:
                 blockPlacements.append((rx,ry))
     for i in range(0,len(blockPlacements)):
-        newBlocks.append(Block(BLUE,screen,blockPlacements[i][0]*32,blockPlacements[i][1]*32))
+        newBlocks.append(Block(BLUE,screen,blockPlacements[i][0]*32,blockPlacements[i][1]*32))  
     return newBlocks
 def restart():
     global player
