@@ -18,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="34">
-                <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+              <first_editor relative-caret-position="166">
+                <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -33,8 +33,8 @@
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="187">
-                <caret line="11" selection-start-line="10" selection-start-column="18" selection-end-line="11" />
+              <first_editor relative-caret-position="51">
+                <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="18" />
               </first_editor>
               <second_editor />
             </state>
@@ -57,14 +57,26 @@
         <entry file="file://$PROJECT_DIR$/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="408">
-                <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <first_editor relative-caret-position="435">
+                <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
-                  <marker date="1552599597358" expanded="true" signature="693:755" ph="..." />
+                  <marker date="1552682841000" expanded="true" signature="693:755" ph="..." />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-17" />
+              <second_editor relative-caret-position="-58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="188">
+                <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+              </first_editor>
+              <second_editor relative-caret-position="-119" />
             </state>
           </provider>
         </entry>
@@ -74,19 +86,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Setup Script" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tolerance</find>
-      <find>Block</find>
-      <find>screen.fill</find>
-      <find>for x in range(0,len(lvl))</find>
-      <find>for y in range(0,len(lvl[x])):</find>
-      <find>for y in range(0, len(lvl[x])):</find>
       <find>for x in range(0,len(lvl)):</find>
       <find>blocks =</find>
       <find>Block(B</find>
@@ -109,8 +115,14 @@
       <find>screen_width</find>
       <find>time()</find>
       <find>time()-start</find>
-      <find>tTime</find>
       <find>upBlue</find>
+      <find>del</find>
+      <find>import</find>
+      <find>tTime</find>
+      <find>players</find>
+      <find>groups</find>
+      <find>groups()</find>
+      <find>display.flip</find>
     </findStrings>
     <replaceStrings>
       <replace>randomint</replace>
@@ -143,6 +155,11 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="nimi142 &lt;rappaport.nimrod@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -152,6 +169,8 @@
         <option value="$PROJECT_DIR$/ca4r.py" />
         <option value="$PROJECT_DIR$/ImageBackGround.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/threading.py" />
+        <option value="$PROJECT_DIR$/myThread.py" />
         <option value="$PROJECT_DIR$/Block.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
@@ -246,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1552587329092</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Massive optimization">
+      <created>1552602009503</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1552602009503</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Adding acceleration over time">
+      <created>1552680400412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1552680400412</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -279,7 +312,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="s" />
-    <option name="LAST_COMMIT_MESSAGE" value="s" />
+    <MESSAGE value="Massive optimization" />
+    <MESSAGE value="Adding acceleration over time" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding acceleration over time" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -383,42 +418,24 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/AtariLogo.png" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/threading.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="102">
-            <caret line="187" column="17" selection-start-line="187" selection-start-column="17" selection-end-line="187" selection-end-column="17" />
+          <first_editor relative-caret-position="99">
+            <caret line="853" column="8" selection-start-line="853" selection-start-column="8" selection-end-line="853" selection-end-column="8" />
           </first_editor>
           <second_editor relative-caret-position="-119" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/myThread.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="34">
-            <caret line="79" column="19" selection-start-line="79" selection-start-column="19" selection-end-line="79" selection-end-column="19" />
+            <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
             <folding>
-              <element signature="e#0#13#0" expanded="true" />
+              <element signature="e#0#16#0" expanded="true" />
             </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="187">
-            <caret line="11" selection-start-line="10" selection-start-column="18" selection-end-line="11" />
           </first_editor>
           <second_editor />
         </state>
@@ -434,17 +451,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="188">
+            <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="51">
+            <caret line="3" selection-start-line="3" selection-end-line="10" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="408">
-            <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <first_editor relative-caret-position="435">
+            <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
-              <marker date="1552599597358" expanded="true" signature="693:755" ph="..." />
+              <marker date="1552682841000" expanded="true" signature="693:755" ph="..." />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-17" />
+          <second_editor relative-caret-position="-58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="166">
+            <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+            <folding>
+              <element signature="e#0#13#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

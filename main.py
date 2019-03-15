@@ -27,6 +27,7 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
 BLUE = (0,0,153)
+GREEN = (0,255,0)
 PLAYER_SPEED = 4
 SCROLL_SPEED = 4
 r = random.randint(0,1000)
@@ -45,6 +46,7 @@ def makeCol(x,amountCols):
     return newBlocks
 def restart():
     global player
+    global player2
     global blocks
     global running
     global isDead
@@ -52,6 +54,7 @@ def restart():
     global counter
     global r
     global SCROLL_SPEED
+    global players
     SCROLL_SPEED = 4
     r = random.randint(0,1000)
     random.seed(r)
@@ -60,7 +63,12 @@ def restart():
     screen = pygame.display.set_mode((800, TOTAL_H))
     screen.fill(BLACK)
     blocks = []
-    player = Block(RED, screen, 0, 32, 28, 28, True)
+    players = []
+    player = Block(RED, screen, 0, 32, 28, 28, True,players)
+    if isPlayerTwo:
+        player2 = Block(GREEN, screen, 0, 32, 28, 28, True,players)
+        players.append(player2)
+    players.append(player)
     running = True
     isDead = False
     upBlue.draw(screen)
@@ -72,10 +80,16 @@ tFailed = failFont.render('GAME OVER!', True, (255, 0, 0))
 TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
-player = Block(RED, screen, 0,32,28,28,True)
+players = []
+player = Block(RED, screen, 0,32,28,28,True,players)
+player2 = Block(GREEN,screen,0,32,28,28,True,players)
+players.append(player)
+print(player.groups())
+isPlayerTwo = False
 running = True
 isDead = False
 start = time()
+time_since_change = 0
 blocks = []
 upBlue = Block(BLUE,screen, 0,0,TOTAL_W)
 downBlue = Block(BLUE,screen, 0,TOTAL_H - 32,TOTAL_W)
@@ -84,6 +98,8 @@ downBlue.draw(screen)
 timefont = pygame.font.SysFont('Consolas', 13)
 counter = 0
 while running:
+    keys = pygame.key.get_pressed()
+    player.draw(screen)
     SCROLL_SPEED += 0.001
     pygame.time.delay(16)
     if not isDead:
@@ -96,26 +112,51 @@ while running:
             i.update(-SCROLL_SPEED,0)
             if i.x == -32:
                 blocks.remove(i)
-            if (i.shape.colliderect(player.shape)  or upBlue.shape.colliderect(player.shape) or downBlue.shape.colliderect(player.shape)):
-                screen.blit(tFailed,(200,150))
-                isDead = True
+            for j in players:
+                if (i.shape.colliderect(j.shape)  or upBlue.shape.colliderect(j.shape) or downBlue.shape.colliderect(j.shape)):
+                    screen.blit(tFailed,(200,150))
+                    isDead = True
         pygame.display.flip()
+        if keys[pygame.K_UP]:
+            player.update(0,-PLAYER_SPEED)
+        if keys[pygame.K_DOWN]:
+            player.update(0,PLAYER_SPEED)
+        if keys[pygame.K_RIGHT]:
+            player.update(PLAYER_SPEED,0)
+        if keys[pygame.K_LEFT]:
+            player.update(-PLAYER_SPEED,0)
+        if pygame.key.get_pressed()[pygame.K_p] and time() - time_since_change > 1:
+            time_since_change = time()
+            if isPlayerTwo:
+                print(players)
+                isPlayerTwo = False
+                # players.remove(player2)
+                player2.kill()
+            else:
+                print(players)
+                player2.x = 0
+                player2.y = 32
+                player2.updateShape()
+                player2.draw(screen)
+                isPlayerTwo = True
+                players.append(player2)
+        if isPlayerTwo and not isDead:
+            player2.draw(screen)
+            if keys[pygame.K_w]:
+                player2.update(0, -PLAYER_SPEED)
+            if keys[pygame.K_s]:
+                player2.update(0, PLAYER_SPEED)
+            if keys[pygame.K_d]:
+                player2.update(PLAYER_SPEED, 0)
+            if keys[pygame.K_a]:
+                player2.update(-PLAYER_SPEED, 0)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-    keys = pygame.key.get_pressed()
     if keys[pygame.K_ESCAPE]:
         running = False
     if keys[pygame.K_SPACE]:
         restart()
-    if keys[pygame.K_UP]:
-        player.update(0,-PLAYER_SPEED)
-    if keys[pygame.K_DOWN]:
-        player.update(0,PLAYER_SPEED)
-    if keys[pygame.K_RIGHT]:
-        player.update(PLAYER_SPEED,0)
-    if keys[pygame.K_LEFT]:
-        player.update(-PLAYER_SPEED,0)
     if not isDead:
         counter += 1
 

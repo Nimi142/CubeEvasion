@@ -10,9 +10,11 @@ class Block(pygame.sprite.Sprite):
         self.y = y
         self.color = color
         self.shape = Rect(self.x, self.y, self.x0, self.y0)
-        self.draw(screen)
         self.screen = screen
         self.player = isPlayer
+        self.__g = groups
+    def updateShape(self):
+        self.shape = Rect(self.x,self.y,self.x0,self.y0)
     def draw(self,screen):
         pygame.draw.rect(screen,self.color,self.shape)
         pygame.display.flip()
@@ -26,3 +28,7 @@ class Block(pygame.sprite.Sprite):
         pygame.draw.rect(self.screen,self.color,self.shape)
     def kill(self):
         pygame.draw.rect(self.screen,BLACK,self.shape)
+        print(self.groups)
+        for i in self.__g:
+            print(self.groups)
+            i.remove(self)
