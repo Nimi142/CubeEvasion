@@ -55,6 +55,8 @@ def restart():
     global r
     global SCROLL_SPEED
     global players
+    global score
+    score = 0
     SCROLL_SPEED = 4
     r = random.randint(0,1000)
     random.seed(r)
@@ -97,6 +99,7 @@ upBlue.draw(screen)
 downBlue.draw(screen)
 timefont = pygame.font.SysFont('Consolas', 13)
 counter = 0
+score = 0
 while running:
     keys = pygame.key.get_pressed()
     player.draw(screen)
@@ -106,8 +109,10 @@ while running:
         if counter % 64 == 0:
             blocks.extend(makeCol(33,8))
         upBlue.draw(screen)
-        tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(SCROLL_SPEED) + ", Time: " + str(round(time()-start,3)) , True, (255, 0, 0))
+        tScore = timefont.render("Score: " + str(round(score,0)), True, RED)
+        tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) + ", Time: " + str(round(time()-start,3)) , True, (255, 0, 0))
         screen.blit(tTime,(10,10))
+        screen.blit(tScore,(600,10))
         for i in blocks:
             i.update(-SCROLL_SPEED,0)
             if i.x == -32:
@@ -159,4 +164,5 @@ while running:
         restart()
     if not isDead:
         counter += 1
+        score += len(blocks)/10
 

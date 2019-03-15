@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Block.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,13 +17,13 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="166">
-                <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+              <first_editor relative-caret-position="2193">
+                <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-119" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -57,14 +56,14 @@
         <entry file="file://$PROJECT_DIR$/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="435">
-                <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+              <first_editor relative-caret-position="119">
+                <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
-                  <marker date="1552682841000" expanded="true" signature="693:755" ph="..." />
+                  <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-58" />
+              <second_editor relative-caret-position="-119" />
             </state>
           </provider>
         </entry>
@@ -74,7 +73,7 @@
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor relative-caret-position="188">
-                <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+                <caret line="201" selection-start-line="201" selection-end-line="201" />
               </first_editor>
               <second_editor relative-caret-position="-119" />
             </state>
@@ -279,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552680400412</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added w player couch co-op">
+      <created>1552683395046</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552683395046</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -314,7 +320,8 @@
     <MESSAGE value="s" />
     <MESSAGE value="Massive optimization" />
     <MESSAGE value="Adding acceleration over time" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding acceleration over time" />
+    <MESSAGE value="Added w player couch co-op" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added w player couch co-op" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -441,21 +448,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageBackGround.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="68">
-            <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="188">
-            <caret line="201" lean-forward="true" selection-start-line="201" selection-end-line="201" />
+            <caret line="201" selection-start-line="201" selection-end-line="201" />
           </first_editor>
           <second_editor relative-caret-position="-119" />
         </state>
@@ -471,30 +468,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ImageBackGround.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="68">
+            <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="435">
-            <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <first_editor relative-caret-position="119">
+            <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
-              <marker date="1552682841000" expanded="true" signature="693:755" ph="..." />
+              <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-58" />
+          <second_editor relative-caret-position="-119" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="166">
-            <caret line="133" column="30" selection-start-line="133" selection-start-column="30" selection-end-line="133" selection-end-column="30" />
+          <first_editor relative-caret-position="2193">
+            <caret line="129" column="41" lean-forward="true" selection-start-line="129" selection-start-column="41" selection-end-line="129" selection-end-column="41" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-119" />
+          <second_editor />
         </state>
       </provider>
       <provider editor-type-id="text-editor">
