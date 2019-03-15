@@ -51,6 +51,8 @@ def restart():
     global start
     global counter
     global r
+    global SCROLL_SPEED
+    SCROLL_SPEED = 4
     r = random.randint(0,1000)
     random.seed(r)
     counter = 0
@@ -82,12 +84,13 @@ downBlue.draw(screen)
 timefont = pygame.font.SysFont('Consolas', 13)
 counter = 0
 while running:
+    SCROLL_SPEED += 0.001
     pygame.time.delay(16)
     if not isDead:
         if counter % 64 == 0:
             blocks.extend(makeCol(33,8))
         upBlue.draw(screen)
-        tTime = timefont.render("seed: "+str(r) + ", Time: " + str(round(time()-start,3)) , True, (255, 0, 0))
+        tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(SCROLL_SPEED) + ", Time: " + str(round(time()-start,3)) , True, (255, 0, 0))
         screen.blit(tTime,(10,10))
         for i in blocks:
             i.update(-SCROLL_SPEED,0)
