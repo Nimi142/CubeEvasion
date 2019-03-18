@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/myCheckbox.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImageBackGround.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ImageBackGround.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myCheckbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/myCheckbox.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,19 +20,19 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="187">
-                <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+              <first_editor relative-caret-position="1564">
+                <caret line="92" selection-start-line="92" selection-end-line="92" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-17" />
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/myCheckbox.py">
+        <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor relative-caret-position="170">
@@ -55,7 +56,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ImageBackGround.py">
+        <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor />
@@ -65,7 +66,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Block.py">
+        <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
               <first_editor relative-caret-position="255">
@@ -199,7 +200,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+    <option name="x" value="742" />
+    <option name="y" value="282" />
     <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
@@ -226,6 +228,11 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rappa\PycharmProjects\CubeEvasion\Classes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -308,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552690522876</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding Pause and seed change system.">
+      <created>1552935105768</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1552935105768</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -320,12 +334,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993395" weight="0.39892906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -345,13 +359,14 @@
     <MESSAGE value="Adding acceleration over time" />
     <MESSAGE value="Added w player couch co-op" />
     <MESSAGE value="Add score label and a primitive score measuring function (each iteration add the amount of loaded blocks to score)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add score label and a primitive score measuring function (each iteration add the amount of loaded blocks to score)" />
+    <MESSAGE value="Adding Pause and seed change system." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding Pause and seed change system." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/myCheckbox.py</url>
+          <url>file://$PROJECT_DIR$/Classes/myCheckbox.py</url>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
@@ -446,9 +461,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ca4r.py" />
-    <entry file="file://$PROJECT_DIR$/local-filename.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/AtariLogo.png" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/threading.py">
       <provider selected="true" editor-type-id="live-pycharm">
@@ -471,7 +483,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Block.py">
+    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="255">
@@ -495,7 +507,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ImageBackGround.py">
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor />
@@ -503,7 +515,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/myCheckbox.py">
+    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="170">
@@ -513,16 +525,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/local-filename.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="187">
-            <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <first_editor relative-caret-position="1564">
+            <caret line="92" selection-start-line="92" selection-end-line="92" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-17" />
+          <second_editor />
         </state>
       </provider>
       <provider editor-type-id="text-editor">

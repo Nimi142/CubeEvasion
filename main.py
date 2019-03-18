@@ -1,10 +1,8 @@
-import pygame
 import random
-from time import sleep,time
-from Block import Block
-from ImageBackGround import *
-from tkinter import *
-from myCheckbox import *
+from time import time
+from Classes.Block import Block
+from Classes.ImageBackGround import *
+from Classes.myCheckbox import *
 def confirmSeed():
     global eSeed
     global r
@@ -46,7 +44,6 @@ else:
         pygame.event.get()
 
 # Define some colors
-from pygame.rect import Rect
 # An idea for the randomizer, do it in batches and lkimit the number of blocks.
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
