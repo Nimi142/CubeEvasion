@@ -8,5 +8,6 @@ setup(
     license='',
     author='Nimrod Rappaport',
     author_email='rappaport.nimrod@gmail.com',
-    description=''
+    description='',
+    install_requires = ['pygame',],
 )
