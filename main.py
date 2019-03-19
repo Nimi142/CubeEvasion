@@ -3,7 +3,22 @@ from time import time
 from Classes.Block import Block
 from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
-configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"settings":pygame.K_s,"2up":pygame.K_w,
+from io import BytesIO
+from base64 import b64decode
+pygame.init()
+main = Tk()
+seedWindow = Toplevel()
+controlsWindow = Toplevel()
+image64 = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAABOSURBVEhL7ZYhDgAgDAOreQb//yOQlARXtU6QXs7M9OzQwQCmwTN7OYeDN9sXWEWSBIQkASFJQEgSEJIEhCQBIUlASL4M1NIYsD+/RoANprRM50WVCWoAAAAASUVORK5CYII="
+logo = BytesIO(b64decode(image64))
+logo = pygame.image.load(logo)
+pygame.display.set_caption("Cube Evasion")
+pygame.display.set_icon(logo)
+main.title("Cube Evasion: Settings")
+seedWindow.title("Cube Evasion: Seed")
+controlsWindow.title("Cube Evasion: Controls")
+
+configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"settings":pygame.K_BACKQUOTE,"2up":pygame.K_w,
             "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d}
 configsKeys = ["up","down","left","right","player2","pause","settings","2up","2down","2left","2right"]
 def confirmSeed():
@@ -21,15 +36,17 @@ def confirmControls():
     global configsKeys
     l = []
     for i in range(0,len(listEntries)):
-        j = listEntries[i].get()
+        j = listEntries[i].get().lower()
         if j is not "":
-            if j.lower() == "up":
+            if j == "backquote":
+                l.append(pygame.K_BACKQUOTE)
+            elif j == "up":
                 l.append(pygame.K_UP)
-            elif j.lower() == "down":
+            elif j == "down":
                 l.append(pygame.K_DOWN)
-            elif j.lower() == "left":
+            elif j == "left":
                 l.append(pygame.K_LEFT)
-            elif j.lower() == "right":
+            elif j == "right":
                 l.append(pygame.K_RIGHT)
             else:
                 l.append(ord(j))
@@ -53,9 +70,6 @@ def confirmSettings():
     main.quit()
     restart(r)
 isRandSeed = True
-main = Tk()
-seedWindow = Toplevel()
-controlsWindow = Toplevel()
 # Setting main:
 bFinishSettings = Button(main,text = "Finish", command = confirmSettings)
 bToSeed = Button(main,text = "open seed window", command = seedWindow.deiconify)
@@ -88,7 +102,7 @@ eChangeP2.insert(0,"p")
 ePause = Entry(controlsWindow)
 ePause.insert(0,"r")
 eSettings = Entry(controlsWindow)
-eSettings.insert(0,"s")
+eSettings.insert(0,"backquote")
 listEntries = [eUp,eDown,eLeft,eRight,e2Up,e2Down,e2Left,e2Right,eChangeP2,ePause,eSettings]
 lPlayer = Label(controlsWindow,text = "Player1: ")
 lPlayer2 = Label(controlsWindow,text = "Player2: ")
@@ -140,7 +154,6 @@ eSeed.pack()
 randseedCheck.pack()
 bSeed.pack()
 main.withdraw()
-pygame.init()
 isDebug = True
 transition = pygame.display.set_mode((400,400))
 try:
@@ -309,7 +322,10 @@ while running:
                     isDead = True
         pygame.display.flip()
         # Opening seed if needed
-        if keys[configs["settings"]] and isPause:
+        if keys[configs["settings"]]:
+            isPause = True
+            screen.blit(tPause,(200,150))
+            pygame.display.flip()
             print("Opening main")
             main.deiconify()
             seedWindow.withdraw()
