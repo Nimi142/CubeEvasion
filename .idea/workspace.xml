@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ImageBackGround.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ImageBackGround.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myCheckbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/myCheckbox.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,13 +17,29 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="1564">
-                <caret line="92" selection-start-line="92" selection-end-line="92" />
+              <first_editor relative-caret-position="-3397">
+                <caret line="5" column="117" selection-start-line="5" selection-start-column="117" selection-end-line="5" selection-end-column="117" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor />
+              <second_editor relative-caret-position="-119" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Classes/Block.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="221">
+                <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+                <folding>
+                  <element signature="e#0#13#0" expanded="true" />
+                  <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
+                </folding>
+              </first_editor>
+              <second_editor relative-caret-position="-51" />
             </state>
           </provider>
         </entry>
@@ -59,24 +72,10 @@
         <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Block.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="255">
-                <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-                <folding>
-                  <element signature="e#0#13#0" expanded="true" />
-                  <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
-                </folding>
+              <first_editor>
+                <caret column="13" selection-start-column="13" selection-end-column="13" />
               </first_editor>
-              <second_editor relative-caret-position="-17" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -105,13 +104,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>tTime</find>
-      <find>players</find>
-      <find>groups</find>
-      <find>groups()</find>
-      <find>display.flip</find>
-      <find>KMOD_SHIFT</find>
-      <find>K_LSHIFT</find>
       <find>pygame.init()</find>
       <find>isPause</find>
       <find>K_BACKQUOTE</find>
@@ -135,6 +127,13 @@
       <find>seed</find>
       <find>r</find>
       <find>None</find>
+      <find>blit</find>
+      <find>player</find>
+      <find>player =</find>
+      <find>screen</find>
+      <find>pygame.display.flip</find>
+      <find>K_UP</find>
+      <find>K_DOWN</find>
     </findStrings>
     <replaceStrings>
       <replace>randomint</replace>
@@ -188,6 +187,8 @@
         <option value="$PROJECT_DIR$/myThread.py" />
         <option value="$PROJECT_DIR$/Block.py" />
         <option value="$PROJECT_DIR$/myCheckbox.py" />
+        <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
+        <option value="$PROJECT_DIR$/Classes/ImageBlock.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -200,8 +201,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="742" />
-    <option name="y" value="282" />
+    <option name="x" value="741" />
+    <option name="y" value="281" />
     <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
@@ -211,6 +212,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,7 +224,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,7 +323,28 @@
       <option name="project" value="LOCAL" />
       <updated>1552935105768</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding Pause and seed change system.">
+      <created>1552939005017</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1552939005017</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Rearranging file structure">
+      <created>1552939034654</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552939034654</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Rearranging file structure">
+      <created>1552941718418</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1552941718418</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -334,12 +356,12 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993395" weight="0.39892906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -360,7 +382,8 @@
     <MESSAGE value="Added w player couch co-op" />
     <MESSAGE value="Add score label and a primitive score measuring function (each iteration add the amount of loaded blocks to score)" />
     <MESSAGE value="Adding Pause and seed change system." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Pause and seed change system." />
+    <MESSAGE value="Rearranging file structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rearranging file structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -473,6 +496,19 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/myThread.py" />
+    <entry file="file://$PROJECT_DIR$/local-filename.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -483,17 +519,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="255">
-            <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
-            <folding>
-              <element signature="e#0#13#0" expanded="true" />
-              <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
-            </folding>
+          <first_editor>
+            <caret column="13" selection-start-column="13" selection-end-column="13" />
           </first_editor>
-          <second_editor relative-caret-position="-17" />
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -507,37 +539,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBlock.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <first_editor relative-caret-position="204">
+            <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local-filename.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="221">
+            <caret line="16" column="40" lean-forward="true" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+            <folding>
+              <element signature="e#0#13#0" expanded="true" />
+              <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor relative-caret-position="-51" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="1564">
-            <caret line="92" selection-start-line="92" selection-end-line="92" />
+          <first_editor relative-caret-position="-3397">
+            <caret line="5" column="117" selection-start-line="5" selection-start-column="117" selection-end-line="5" selection-end-column="117" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor />
+          <second_editor relative-caret-position="-119" />
         </state>
       </provider>
       <provider editor-type-id="text-editor">

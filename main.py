@@ -3,6 +3,8 @@ from time import time
 from Classes.Block import Block
 from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
+configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"seed":pygame.K_s,"2up":pygame.K_w,
+            "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d}
 def confirmSeed():
     global eSeed
     global r
@@ -157,48 +159,61 @@ timefont = pygame.font.SysFont('Consolas', 13)
 tPause = failFont.render("PAUSE",True,RED)
 counter = 0
 score = 0
+
+
+# Run loop:
 while running:
+    # Blitting "pause" if paused
     if isPause:
         screen.blit(tPause,(150,200))
         pygame.display.flip()
+    # Getting pressed keys:
     keys = pygame.key.get_pressed()
     player.draw(screen)
+    # Accelerating screen:
     if not isPause:
         SCROLL_SPEED += 0.001
     pygame.time.delay(16)
     if not isDead:
+        # Making new blocks:
         if counter % 64 == 0:
             blocks.extend(makeCol(33,8))
+        # Drawing upper borders:
         upBlue.draw(screen)
+        # Changing text of Score and Time and blitting them:
         tScore = timefont.render("Score: " + str(round(score,0)), True, RED)
         tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
         screen.blit(tTime,(10,10))
         screen.blit(tScore,(600,10))
+        # Updating position of Blocks:
         for i in blocks:
             i.update(-SCROLL_SPEED,0)
             if i.x == -32:
                 blocks.remove(i)
+            # Checking for collisions
             for j in players:
                 if (i.shape.colliderect(j.shape)  or upBlue.shape.colliderect(j.shape) or downBlue.shape.colliderect(j.shape)):
                     screen.blit(tFailed,(200,150))
                     isDead = True
         pygame.display.flip()
-        if keys[pygame.K_s] and isPause:
+        # Opening seed if needed
+        if keys[configs["seed"]] and isPause:
             print("Opening main")
             seedWindow.deiconify()
             main.mainloop()
-
-        if keys[pygame.K_r] and time()-pauseTime > 1:
+        # Checking for pause and movement:
+        if keys[configs["pause"]] and time()-pauseTime > 1:
             pause(screen)
-        if keys[pygame.K_UP]:
+        if keys[configs["up"]]:
             player.update(0,-PLAYER_SPEED)
-        if keys[pygame.K_DOWN]:
+        if keys[configs["down"]]:
             player.update(0,PLAYER_SPEED)
-        if keys[pygame.K_RIGHT]:
+        if keys[configs["right"]]:
             player.update(PLAYER_SPEED,0)
-        if keys[pygame.K_LEFT]:
+        if keys[configs["left"]]:
             player.update(-PLAYER_SPEED,0)
-        if pygame.key.get_pressed()[pygame.K_p] and time() - time_since_change > 1 and (not isPause):
+        # Adding/ Removing Second player:
+        if pygame.key.get_pressed()[configs["player2"]] and time() - time_since_change > 1 and (not isPause):
             time_since_change = time()
             if isPlayerTwo:
                 isPlayerTwo = False
@@ -212,14 +227,15 @@ while running:
                 isPlayerTwo = True
                 players.append(player2)
         if isPlayerTwo and not isDead:
+            # Checking for p2 movement:
             player2.draw(screen)
-            if keys[pygame.K_w]:
+            if keys[configs["2up"]]:
                 player2.update(0, -PLAYER_SPEED)
-            if keys[pygame.K_s]:
+            if keys[configs["2down"]]:
                 player2.update(0, PLAYER_SPEED)
-            if keys[pygame.K_d]:
+            if keys[configs["2right"]]:
                 player2.update(PLAYER_SPEED, 0)
-            if keys[pygame.K_a]:
+            if keys[configs["2left"]]:
                 player2.update(-PLAYER_SPEED, 0)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
