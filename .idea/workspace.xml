@@ -17,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="-3397">
-                <caret line="5" column="117" selection-start-line="5" selection-start-column="117" selection-end-line="5" selection-end-column="117" />
+              <first_editor relative-caret-position="272">
+                <caret line="350" column="25" lean-forward="true" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -48,9 +48,7 @@
         <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="170">
-                <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-              </first_editor>
+              <first_editor />
               <second_editor />
             </state>
           </provider>
@@ -104,8 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pygame.init()</find>
-      <find>isPause</find>
       <find>K_BACKQUOTE</find>
       <find>f</find>
       <find>pause</find>
@@ -123,8 +119,6 @@
       <find>pack</find>
       <find>myChec</find>
       <find>myCh</find>
-      <find>restart</find>
-      <find>seed</find>
       <find>r</find>
       <find>None</find>
       <find>blit</find>
@@ -134,6 +128,10 @@
       <find>pygame.display.flip</find>
       <find>K_UP</find>
       <find>K_DOWN</find>
+      <find>K_</find>
+      <find>seed</find>
+      <find>restart</find>
+      <find>bCont</find>
     </findStrings>
     <replaceStrings>
       <replace>randomint</replace>
@@ -344,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1552941718418</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Making keys from a dictionary, preparing to do a change controls settings">
+      <created>1552987168991</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552987168991</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -383,17 +388,10 @@
     <MESSAGE value="Add score label and a primitive score measuring function (each iteration add the amount of loaded blocks to score)" />
     <MESSAGE value="Adding Pause and seed change system." />
     <MESSAGE value="Rearranging file structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Rearranging file structure" />
+    <MESSAGE value="Making keys from a dictionary, preparing to do a change controls settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making keys from a dictionary, preparing to do a change controls settings" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Classes/myCheckbox.py</url>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
         <watch expression="j*height" language="Python" />
@@ -499,16 +497,6 @@
     <entry file="file://$PROJECT_DIR$/local-filename.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="170">
-            <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -563,11 +551,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="-3397">
-            <caret line="5" column="117" selection-start-line="5" selection-start-column="117" selection-end-line="5" selection-end-column="117" />
+          <first_editor relative-caret-position="272">
+            <caret line="350" column="25" lean-forward="true" selection-start-line="350" selection-start-column="25" selection-end-line="350" selection-end-column="25" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>

@@ -3,8 +3,9 @@ from time import time
 from Classes.Block import Block
 from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
-configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"seed":pygame.K_s,"2up":pygame.K_w,
+configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"settings":pygame.K_s,"2up":pygame.K_w,
             "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d}
+configsKeys = ["up","down","left","right","player2","pause","settings","2up","2down","2left","2right"]
 def confirmSeed():
     global eSeed
     global r
@@ -14,11 +15,122 @@ def confirmSeed():
     r = int(eSeed.get())
     random.seed(int(eSeed.get()))
     seedWindow.withdraw()
+def confirmControls():
+    global listEntries
+    global configs
+    global configsKeys
+    l = []
+    for i in range(0,len(listEntries)):
+        j = listEntries[i].get()
+        if j is not "":
+            if j.lower() == "up":
+                l.append(pygame.K_UP)
+            elif j.lower() == "down":
+                l.append(pygame.K_DOWN)
+            elif j.lower() == "left":
+                l.append(pygame.K_LEFT)
+            elif j.lower() == "right":
+                l.append(pygame.K_RIGHT)
+            else:
+                l.append(ord(j))
+    for i in range(0,len(l)):
+        pass
+    print(l[0])
+    configs["up"] = l[0]
+    configs["down"] = l[1]
+    configs["left"] = l[2]
+    configs["right"] = l[3]
+    configs["2up"] = l[4]
+    configs["2down"] = l[5]
+    configs["2left"] = l[6]
+    configs["2right"] = l[7]
+    configs["player2"] = l[8]
+    configs["pause"] = l[9]
+    configs["settings"] = l[10]
+    controlsWindow.withdraw()
+def confirmSettings():
+    main.withdraw()
     main.quit()
     restart(r)
 isRandSeed = True
 main = Tk()
 seedWindow = Toplevel()
+controlsWindow = Toplevel()
+# Setting main:
+bFinishSettings = Button(main,text = "Finish", command = confirmSettings)
+bToSeed = Button(main,text = "open seed window", command = seedWindow.deiconify)
+bToControls = Button(main, text = "Open controls",command = controlsWindow.deiconify)
+bToSeed.pack()
+bToControls.pack()
+bFinishSettings.pack()
+# Setting controls window:
+spacer1 = Label(controlsWindow)
+spacer2 = Label(controlsWindow)
+bConfirmControls = Button(controlsWindow,text = "Confirm",command = confirmControls)
+eUp = Entry(controlsWindow)
+eUp.insert(0,"up")
+eDown = Entry(controlsWindow)
+eDown.insert(0,"down")
+eLeft = Entry(controlsWindow)
+eLeft.insert(0,"left")
+eRight = Entry(controlsWindow)
+eRight.insert(0,"right")
+e2Up = Entry(controlsWindow)
+e2Up.insert(0,"w")
+e2Down = Entry(controlsWindow)
+e2Down.insert(0,"s")
+e2Left = Entry(controlsWindow)
+e2Left.insert(0,"a")
+e2Right = Entry(controlsWindow)
+e2Right.insert(0,"f")
+eChangeP2 = Entry(controlsWindow)
+eChangeP2.insert(0,"p")
+ePause = Entry(controlsWindow)
+ePause.insert(0,"r")
+eSettings = Entry(controlsWindow)
+eSettings.insert(0,"s")
+listEntries = [eUp,eDown,eLeft,eRight,e2Up,e2Down,e2Left,e2Right,eChangeP2,ePause,eSettings]
+lPlayer = Label(controlsWindow,text = "Player1: ")
+lPlayer2 = Label(controlsWindow,text = "Player2: ")
+lUp = Label(controlsWindow,text = "Up: ")
+lDown = Label(controlsWindow,text = "Down: ")
+lLeft = Label(controlsWindow,text = "Left: ")
+lRight = Label(controlsWindow,text = "Right: ")
+l2Up = Label(controlsWindow,text = "Up: ")
+l2Down = Label(controlsWindow,text = "Down: ")
+l2Left = Label(controlsWindow,text = "Left: ")
+l2Right = Label(controlsWindow,text = "Right: ")
+lChangeP2 = Label(controlsWindow,text = "Change players: ")
+lPause = Label(controlsWindow,text = "Pause: ")
+lSettings = Label(controlsWindow,text = "Settings: ")
+lPlayer.grid(row = 0,column = 0)
+lUp.grid(row = 1,column = 0)
+lDown.grid(row = 2,column = 0)
+lLeft.grid(row = 3,column = 0)
+lRight.grid(row = 4,column = 0)
+spacer1.grid(row = 5,column = 0)
+lChangeP2.grid(row = 6,column = 0)
+lPause.grid(row = 7,column = 0)
+eUp.grid(row = 1,column = 1)
+eDown.grid(row = 2,column = 1)
+eLeft.grid(row = 3,column = 1)
+eRight.grid(row = 4,column = 1)
+eChangeP2.grid(row = 6,column = 1)
+ePause.grid(row = 7,column = 1)
+lPlayer2.grid(row = 0,column = 2)
+l2Up.grid(row = 1,column = 2)
+l2Down.grid(row = 2,column = 2)
+l2Left.grid(row = 3,column = 2)
+l2Right.grid(row = 4,column = 2)
+spacer1.grid(row = 5,column = 0)
+lSettings.grid(row = 6,column = 2)
+e2Up.grid(row = 1,column = 3)
+e2Down.grid(row = 2,column = 3)
+e2Left.grid(row = 3,column = 3)
+e2Right.grid(row = 4,column = 3)
+eSettings.grid(row = 6,column = 3)
+bConfirmControls.grid(column = 0,columnspan = 4,row = 8)
+#Seed window:
 label = Label(seedWindow,text = "Enter seed:")
 eSeed = Entry(seedWindow)
 randseedCheck = mycheckbox(seedWindow,"Randomize seed",True,False)
@@ -197,9 +309,11 @@ while running:
                     isDead = True
         pygame.display.flip()
         # Opening seed if needed
-        if keys[configs["seed"]] and isPause:
+        if keys[configs["settings"]] and isPause:
             print("Opening main")
-            seedWindow.deiconify()
+            main.deiconify()
+            seedWindow.withdraw()
+            controlsWindow.withdraw()
             main.mainloop()
         # Checking for pause and movement:
         if keys[configs["pause"]] and time()-pauseTime > 1:
