@@ -5,11 +5,27 @@ from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
 from io import BytesIO
 from base64 import b64decode
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+RED = (255, 0, 0)
+BLUE = (0,0,153)
+GREEN = (0,255,0)
+PLAYER_SPEED = 4
+pPlayer_SPEED = 4
+SCROLL_SPEED = 4
+pSCROLL_SPEED = 4
+r = random.randint(0,1000)
+random.seed(r)
 pygame.init()
 main = Tk()
 seedWindow = Toplevel()
 controlsWindow = Toplevel()
-image64 = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAABOSURBVEhL7ZYhDgAgDAOreQb//yOQlARXtU6QXs7M9OzQwQCmwTN7OYeDN9sXWEWSBIQkASFJQEgSEJIEhCQBIUlASL4M1NIYsD+/RoANprRM50WVCWoAAAAASUVORK5CYII="
+colorWindow = Toplevel()
+colorPicker = Toplevel()
+colorChange = 0
+image64 = "iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA" \
+          "7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjEuNWRHWFIAAABOSURBVEhL7ZYhDgAgDAOreQb//yOQlARXtU6QXs7M9" \
+          "OzQwQCmwTN7OYeDN9sXWEWSBIQkASFJQEgSEJIEhCQBIUlASL4M1NIYsD+/RoANprRM50WVCWoAAAAASUVORK5CYII="
 logo = BytesIO(b64decode(image64))
 logo = pygame.image.load(logo)
 pygame.display.set_caption("Cube Evasion")
@@ -20,6 +36,8 @@ controlsWindow.title("Cube Evasion: Controls")
 
 configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"settings":pygame.K_BACKQUOTE,"2up":pygame.K_w,
             "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d}
+colors = {"player":RED,"player2":GREEN,"blocks":BLUE,"bg":BLACK,"up":BLUE,"down":BLUE}
+coloraKeys = ["player","player2","blocks","bg","up","down"]
 configsKeys = ["up","down","left","right","player2","pause","settings","2up","2down","2left","2right"]
 def confirmSeed():
     global eSeed
@@ -74,9 +92,64 @@ isRandSeed = True
 bFinishSettings = Button(main,text = "Finish", command = confirmSettings)
 bToSeed = Button(main,text = "open seed window", command = seedWindow.deiconify)
 bToControls = Button(main, text = "Open controls",command = controlsWindow.deiconify)
+bToColor = Button(main,text = "Open Color",command = colorWindow.deiconify)
 bToSeed.pack()
 bToControls.pack()
+bToColor.pack()
 bFinishSettings.pack()
+#Setting Color window:
+bChangePlayerColor = Button(colorWindow,text = "Change Player Color",command = lambda x = 0: abc(x))
+bChangePlayer2Color = Button(colorWindow,text = "Change Player2 Color",command = lambda x = 1: abc(x))
+bChangeBlocksColor = Button(colorWindow,text = "Change Blocks Color",command = lambda x = 2: abc(x))
+bChangeUpColor = Button(colorWindow,text = "Change Upper Barrier Color",command = lambda x = 4: abc(x))
+bChangeDownColor = Button(colorWindow,text = "Change Lower Barrier Color",command = lambda x = 5: abc(x))
+bChangeBgColor = Button(colorWindow,text = "Change Background Color",command = lambda x = 3: abc(x))
+bChangePlayerColor.grid(column = 0,row = 0)
+bChangePlayer2Color.grid(column = 1,row = 0)
+bChangeBlocksColor.grid(column = 0,row = 1)
+bChangeBgColor.grid(column = 1,row = 1)
+bChangeUpColor.grid(column = 0,row = 2)
+bChangeDownColor.grid(column = 1,row = 2)
+# 2
+def abc(x):
+    global colorChange
+    colorChange = x
+    colorPicker.deiconify()
+def returnColor():
+    global colors
+    global player
+    global player2
+    global screen
+    global blocks
+    global colorChange
+    print(colorChange)
+    a = (int(eR.get()),int(eG.get()),int(eB.get()))
+    colorPicker.withdraw()
+    colors[coloraKeys[colorChange]] = a
+    colorPicker.withdraw()
+    colorWindow.withdraw()
+    if colorChange == 4:
+        upBlue.color = a
+    if colorChange == 5:
+        downBlue.color = a
+
+# Setting color picker:
+lcpTitle = Label(colorPicker,text = "Choose the color: ")
+lR = Label(colorPicker,text = "R: ")
+lG = Label(colorPicker,text = "G: ")
+lB = Label(colorPicker,text = "B: ")
+eR = Entry(colorPicker)
+eG = Entry(colorPicker)
+eB = Entry(colorPicker)
+bConfirmColorPicker = Button(colorPicker,text = "Confirm",command = returnColor)
+lcpTitle.grid(column = 0, row = 0,columnspan = 2)
+lR.grid(column = 0, row = 1)
+lG.grid(column = 0, row = 2)
+lB.grid(column = 0, row = 3)
+eR.grid(column = 1, row = 1)
+eG.grid(column = 1, row = 2)
+eB.grid(column = 1, row = 3)
+bConfirmColorPicker.grid(column = 0, row = 4, columnspan = 2)
 # Setting controls window:
 spacer1 = Label(controlsWindow)
 spacer2 = Label(controlsWindow)
@@ -172,17 +245,6 @@ else:
 
 # Define some colors
 # An idea for the randomizer, do it in batches and lkimit the number of blocks.
-BLACK = (0, 0, 0)
-WHITE = (255, 255, 255)
-RED = (255, 0, 0)
-BLUE = (0,0,153)
-GREEN = (0,255,0)
-PLAYER_SPEED = 4
-pPlayer_SPEED = 4
-SCROLL_SPEED = 4
-pSCROLL_SPEED = 4
-r = random.randint(0,1000)
-random.seed(r)
 
 def makeCol(x,amountCols):
     newBlocks = []
@@ -194,7 +256,7 @@ def makeCol(x,amountCols):
             if ry != 0:
                 blockPlacements.append((rx,ry))
     for i in range(0,len(blockPlacements)):
-        newBlocks.append(Block(BLUE,screen,blockPlacements[i][0]*32,blockPlacements[i][1]*32))
+        newBlocks.append(Block(colors["blocks"],screen,blockPlacements[i][0]*32,blockPlacements[i][1]*32))
     return newBlocks
 
 
@@ -215,7 +277,7 @@ def pause(screen):
     if not isPause:
         PLAYER_SPEED = pPlayer_SPEED
         SCROLL_SPEED = pSCROLL_SPEED
-        screen.fill(BLACK)
+        screen.fill(colors["bg"])
         downBlue.draw(screen)
 
 
@@ -246,12 +308,12 @@ def restart(seed = None):
     counter = 0
     start = time()
     screen = pygame.display.set_mode((800, TOTAL_H))
-    screen.fill(BLACK)
+    screen.fill(colors["bg"])
     blocks = []
     players = []
-    player = Block(RED, screen, 0, 32, 28, 28, True,players)
+    player = Block(colors["player"], screen, 0, 32, 28, 28, True,colors["bg"],players)
     if isPlayerTwo:
-        player2 = Block(GREEN, screen, 0, 32, 28, 28, True,players)
+        player2 = Block(colors["player2"], screen, 0, 32, 28, 28, True,players)
         players.append(player2)
     players.append(player)
     running = True
@@ -266,8 +328,8 @@ TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
 players = []
-player = Block(RED, screen, 0,32,28,28,True,players)
-player2 = Block(GREEN,screen,0,32,28,28,True,players)
+player = Block(RED, screen, 0,32,28,28,True,colors["bg"],players)
+player2 = Block(GREEN,screen,0,32,28,28,True,colors["bg"],players)
 players.append(player)
 isPlayerTwo = False
 isPause = False
@@ -330,6 +392,8 @@ while running:
             main.deiconify()
             seedWindow.withdraw()
             controlsWindow.withdraw()
+            colorWindow.withdraw()
+            colorPicker.withdraw()
             main.mainloop()
         # Checking for pause and movement:
         if keys[configs["pause"]] and time()-pauseTime > 1:

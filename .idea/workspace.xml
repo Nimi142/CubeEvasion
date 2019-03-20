@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="357">
-                <caret line="318" column="15" lean-forward="true" selection-start-line="318" selection-start-column="15" selection-end-line="318" selection-end-column="15" />
+              <first_editor relative-caret-position="17">
+                <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -32,58 +33,11 @@
         <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="221">
-                <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <first_editor relative-caret-position="102">
+                <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
-                  <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
                 </folding>
-              </first_editor>
-              <second_editor relative-caret-position="-51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="119">
-                <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor>
-                <caret column="13" selection-start-column="13" selection-end-column="13" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="3366">
-                <caret line="201" selection-start-line="201" selection-end-line="201" />
               </first_editor>
               <second_editor />
             </state>
@@ -102,19 +56,11 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>main</find>
-      <find>s</find>
-      <find>K_s</find>
-      <find>destro</find>
-      <find>K_p</find>
-      <find>print(</find>
-      <find>Checkbutton</find>
       <find>pack</find>
       <find>myChec</find>
       <find>myCh</find>
       <find>r</find>
       <find>None</find>
-      <find>blit</find>
       <find>player</find>
       <find>player =</find>
       <find>pygame.display.flip</find>
@@ -132,9 +78,16 @@
       <find>png</find>
       <find>main = Tk()</find>
       <find>seedWind</find>
+      <find>withdraw</find>
+      <find>.pack</find>
+      <find>player =</find>
+      <find>BLACK</find>
+      <find>BLUE</find>
+      <find>blit</find>
+      <find>RED</find>
+      <find>Block(</find>
     </findStrings>
     <replaceStrings>
-      <replace>randomint</replace>
       <replace>randint</replace>
       <replace>nRule</replace>
       <replace>cSatate</replace>
@@ -164,6 +117,7 @@
       <replace>K_LSHIFT</replace>
       <replace>K_BACKQUOTE</replace>
       <replace>K_r</replace>
+      <replace>bg</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -187,6 +141,7 @@
         <option value="$PROJECT_DIR$/myCheckbox.py" />
         <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
         <option value="$PROJECT_DIR$/Classes/ImageBlock.py" />
+        <option value="$PROJECT_DIR$/Classes/Block.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -199,8 +154,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="741" />
-    <option name="y" value="281" />
+    <option name="x" value="740" />
+    <option name="y" value="280" />
     <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
@@ -210,13 +165,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
               <item name="CubeEvasion" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CubeEvasion" type="462c0819:PsiDirectoryNode" />
+              <item name="Classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
@@ -233,6 +192,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -367,7 +327,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553007539050</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="x">
+      <created>1553028536776</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553028536776</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -408,7 +375,8 @@
     <MESSAGE value="Rearranging file structure" />
     <MESSAGE value="Making keys from a dictionary, preparing to do a change controls settings" />
     <MESSAGE value="Configurable controls!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Configurable controls!" />
+    <MESSAGE value="x" />
+    <option name="LAST_COMMIT_MESSAGE" value="x" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -516,12 +484,11 @@
     <entry file="file://$PROJECT_DIR$/local-filename.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBlock.py" />
+    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
@@ -546,11 +513,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImageBlock.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="204">
-            <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+          <first_editor relative-caret-position="1394">
+            <caret line="2143" column="4" selection-start-line="2143" selection-start-column="4" selection-end-line="2143" selection-end-column="4" />
+          </first_editor>
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           </first_editor>
           <second_editor />
         </state>
@@ -559,21 +536,12 @@
     <entry file="file://$PROJECT_DIR$/Classes/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="221">
-            <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <first_editor relative-caret-position="102">
+            <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
-              <marker date="1552683289104" expanded="true" signature="777:839" ph="..." />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
           <second_editor />
         </state>
       </provider>
@@ -581,8 +549,8 @@
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="357">
-            <caret line="318" column="15" lean-forward="true" selection-start-line="318" selection-start-column="15" selection-end-line="318" selection-end-column="15" />
+          <first_editor relative-caret-position="17">
+            <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
