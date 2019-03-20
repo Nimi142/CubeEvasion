@@ -8,6 +8,6 @@ __Space__ to restart game
 
 __P__ to add/remove player 2!
 
-__`__ to pause
+__R__ to pause
 
-__S__ to open settings
+__`__ to open settings
