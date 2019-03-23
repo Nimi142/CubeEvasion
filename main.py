@@ -377,7 +377,7 @@ while running:
         # Drawing upper borders:
         upBarrier.draw(screen)
         # Changing text of Score and Time and blitting them:
-        tScore = timefont.render("Score: " + str(round(score,0)), True, RED)
+        tScore = timefont.render("Score: " + str(round(score,0)/200), True, RED)
         tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
         screen.blit(tTime,(10,10))
         screen.blit(tScore,(600,10))
@@ -420,7 +420,7 @@ while running:
             time_since_change = time()
             if isPlayerTwo:
                 isPlayerTwo = False
-                # players.remove(player2)
+                players.remove(player2)
                 player2.kill()
             else:
                 player2.x = 0
