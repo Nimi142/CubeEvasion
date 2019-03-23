@@ -1,13 +1,17 @@
-# CubeEvasion
+CubeEvasion
+===========
 
-Play as a red cube and evade the blue cubes.
+In this game you play as a greenish cube and need to evade the gray and boring
+cubes.
 
-__Features:__
+**Features:**
 
-__Space__ to restart game
+**Space** to restart game
 
-__P__ to add/remove player 2!
+**P** to add/remove player 2!
 
-__R__ to pause
+**R** to pause
 
-__`__ to open settings
+**\`** to open settings
+
+You can change the keys, colors, and set the seed of the game.
