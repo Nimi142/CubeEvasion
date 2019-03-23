@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="-1781">
-                <caret line="108" column="74" lean-forward="true" selection-start-line="108" selection-start-column="74" selection-end-line="108" selection-end-column="74" />
+              <first_editor relative-caret-position="118">
+                <caret line="358" column="109" selection-start-line="358" selection-start-column="109" selection-end-line="358" selection-end-column="109" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -31,13 +32,13 @@
         <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="357">
+              <first_editor relative-caret-position="374">
                 <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-17" />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -54,9 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>K_DOWN</find>
-      <find>K_</find>
-      <find>seed</find>
       <find>bCont</find>
       <find>&quot;settings</find>
       <find>pygame.ini</find>
@@ -84,6 +82,9 @@
       <find>up</find>
       <find>downBlue</find>
       <find>colors</find>
+      <find>makeCol</find>
+      <find>player2 =</find>
+      <find>score</find>
     </findStrings>
     <replaceStrings>
       <replace>nRule</replace>
@@ -346,7 +347,21 @@
       <option name="project" value="LOCAL" />
       <updated>1553342521557</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fixed bug of ai block fill not changing">
+      <created>1553343201391</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1553343201391</updated>
+    </task>
+    <task id="LOCAL-00016" summary="AI will now not colide with player2 after it has been disabled. Score divided by 200">
+      <created>1553344271407</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1553344271407</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -390,7 +405,9 @@
     <MESSAGE value="x" />
     <MESSAGE value="Change color" />
     <MESSAGE value="Chnaged color scheme and added restart and space to control layout changing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Chnaged color scheme and added restart and space to control layout changing" />
+    <MESSAGE value="fixed bug of ai block fill not changing" />
+    <MESSAGE value="AI will now not colide with player2 after it has been disabled. Score divided by 200" />
+    <option name="LAST_COMMIT_MESSAGE" value="AI will now not colide with player2 after it has been disabled. Score divided by 200" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -547,6 +564,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="374">
+            <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <folding>
+              <element signature="e#0#13#0" expanded="true" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-21">
@@ -558,26 +588,13 @@
       </provider>
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="-1781">
-            <caret line="108" column="74" lean-forward="true" selection-start-line="108" selection-start-column="74" selection-end-line="108" selection-end-column="74" />
+          <first_editor relative-caret-position="118">
+            <caret line="358" column="109" selection-start-line="358" selection-start-column="109" selection-end-line="358" selection-end-column="109" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
           <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="357">
-            <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-            <folding>
-              <element signature="e#0#13#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-17" />
         </state>
       </provider>
     </entry>

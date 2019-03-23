@@ -377,10 +377,8 @@ while running:
         # Drawing upper borders:
         upBarrier.draw(screen)
         # Changing text of Score and Time and blitting them:
-        tScore = timefont.render("Score: " + str(round(score,0)/200), True, RED)
+        tScore = timefont.render("Score: " + str(round(score,0)/500), True, RED)
         tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
-        screen.blit(tTime,(10,10))
-        screen.blit(tScore,(600,10))
         # Updating position of Blocks:
         for i in blocks:
             i.update(-SCROLL_SPEED,0)
@@ -440,6 +438,8 @@ while running:
                 player2.update(PLAYER_SPEED, 0)
             if keys[configs["2left"]]:
                 player2.update(-PLAYER_SPEED, 0)
+    screen.blit(tTime, (10, 10))
+    screen.blit(tScore, (600, 10))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
