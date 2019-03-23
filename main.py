@@ -5,6 +5,7 @@ from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
 from io import BytesIO
 from base64 import b64decode
+GRAY = (63,63,63)
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 RED = (255, 0, 0)
@@ -34,9 +35,9 @@ main.title("Cube Evasion: Settings")
 seedWindow.title("Cube Evasion: Seed")
 controlsWindow.title("Cube Evasion: Controls")
 
-configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"pause":pygame.K_r,"settings":pygame.K_BACKQUOTE,"2up":pygame.K_w,
+configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"restart":pygame.K_SPACE,"pause":pygame.K_r,"settings":pygame.K_BACKQUOTE,"2up":pygame.K_w,
             "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d}
-colors = {"player":RED,"player2":GREEN,"blocks":BLUE,"bg":BLACK,"up":BLUE,"down":BLUE}
+colors = {"player":(127,255,127),"player2":(127,127,255),"blocks":(127,127,127),"bg":BLACK,"up":GRAY,"down":GRAY}
 coloraKeys = ["player","player2","blocks","bg","up","down"]
 configsKeys = ["up","down","left","right","player2","pause","settings","2up","2down","2left","2right"]
 def confirmSeed():
@@ -56,7 +57,9 @@ def confirmControls():
     for i in range(0,len(listEntries)):
         j = listEntries[i].get().lower()
         if j is not "":
-            if j == "backquote":
+            if j == "space":
+                l.append(pygame.K_SPACE)
+            elif j == "backquote":
                 l.append(pygame.K_BACKQUOTE)
             elif j == "up":
                 l.append(pygame.K_UP)
@@ -82,6 +85,7 @@ def confirmControls():
     configs["player2"] = l[8]
     configs["pause"] = l[9]
     configs["settings"] = l[10]
+    configs["restart"] = l[11]
     controlsWindow.withdraw()
 def confirmSettings():
     main.withdraw()
@@ -129,9 +133,9 @@ def returnColor():
     colorPicker.withdraw()
     colorWindow.withdraw()
     if colorChange == 4:
-        upBlue.color = a
+        upBarrier.color = a
     if colorChange == 5:
-        downBlue.color = a
+        downBarrier.color = a
 
 # Setting color picker:
 lcpTitle = Label(colorPicker,text = "Choose the color: ")
@@ -176,7 +180,9 @@ ePause = Entry(controlsWindow)
 ePause.insert(0,"r")
 eSettings = Entry(controlsWindow)
 eSettings.insert(0,"backquote")
-listEntries = [eUp,eDown,eLeft,eRight,e2Up,e2Down,e2Left,e2Right,eChangeP2,ePause,eSettings]
+eRestart = Entry(controlsWindow)
+eRestart.insert(0,"space")
+listEntries = [eUp,eDown,eLeft,eRight,e2Up,e2Down,e2Left,e2Right,eChangeP2,ePause,eSettings,eRestart]
 lPlayer = Label(controlsWindow,text = "Player1: ")
 lPlayer2 = Label(controlsWindow,text = "Player2: ")
 lUp = Label(controlsWindow,text = "Up: ")
@@ -189,6 +195,7 @@ l2Left = Label(controlsWindow,text = "Left: ")
 l2Right = Label(controlsWindow,text = "Right: ")
 lChangeP2 = Label(controlsWindow,text = "Change players: ")
 lPause = Label(controlsWindow,text = "Pause: ")
+lRestart = Label(controlsWindow,text = "Restart")
 lSettings = Label(controlsWindow,text = "Settings: ")
 lPlayer.grid(row = 0,column = 0)
 lUp.grid(row = 1,column = 0)
@@ -211,11 +218,13 @@ l2Left.grid(row = 3,column = 2)
 l2Right.grid(row = 4,column = 2)
 spacer1.grid(row = 5,column = 0)
 lSettings.grid(row = 6,column = 2)
+lRestart.grid(row = 7, column = 2)
 e2Up.grid(row = 1,column = 3)
 e2Down.grid(row = 2,column = 3)
 e2Left.grid(row = 3,column = 3)
 e2Right.grid(row = 4,column = 3)
 eSettings.grid(row = 6,column = 3)
+eRestart.grid(row = 7,column = 3)
 bConfirmControls.grid(column = 0,columnspan = 4,row = 8)
 #Seed window:
 label = Label(seedWindow,text = "Enter seed:")
@@ -278,7 +287,7 @@ def pause(screen):
         PLAYER_SPEED = pPlayer_SPEED
         SCROLL_SPEED = pSCROLL_SPEED
         screen.fill(colors["bg"])
-        downBlue.draw(screen)
+        downBarrier.draw(screen)
 
 
 def restart(seed = None):
@@ -318,8 +327,8 @@ def restart(seed = None):
     players.append(player)
     running = True
     isDead = False
-    upBlue.draw(screen)
-    downBlue.draw(screen)
+    upBarrier.draw(screen)
+    downBarrier.draw(screen)
 
 pauseTime = 0
 failFont = pygame.font.SysFont('Arial', 52)
@@ -328,8 +337,8 @@ TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
 players = []
-player = Block(RED, screen, 0,32,28,28,True,colors["bg"],players)
-player2 = Block(GREEN,screen,0,32,28,28,True,colors["bg"],players)
+player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"],players)
+player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
 players.append(player)
 isPlayerTwo = False
 isPause = False
@@ -338,10 +347,10 @@ isDead = False
 start = time()
 time_since_change = 0
 blocks = []
-upBlue = Block(BLUE,screen, 0,0,TOTAL_W)
-downBlue = Block(BLUE,screen, 0,TOTAL_H - 32,TOTAL_W)
-upBlue.draw(screen)
-downBlue.draw(screen)
+upBarrier = Block(GRAY,screen, 0,0,TOTAL_W)
+downBarrier = Block(GRAY,screen, 0,TOTAL_H - 32,TOTAL_W)
+upBarrier.draw(screen)
+downBarrier.draw(screen)
 timefont = pygame.font.SysFont('Consolas', 13)
 tPause = failFont.render("PAUSE",True,RED)
 counter = 0
@@ -352,7 +361,7 @@ score = 0
 while running:
     # Blitting "pause" if paused
     if isPause:
-        screen.blit(tPause,(150,200))
+        screen.blit(tPause,(200,150))
         pygame.display.flip()
     # Getting pressed keys:
     keys = pygame.key.get_pressed()
@@ -366,7 +375,7 @@ while running:
         if counter % 64 == 0:
             blocks.extend(makeCol(33,8))
         # Drawing upper borders:
-        upBlue.draw(screen)
+        upBarrier.draw(screen)
         # Changing text of Score and Time and blitting them:
         tScore = timefont.render("Score: " + str(round(score,0)), True, RED)
         tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
@@ -379,7 +388,7 @@ while running:
                 blocks.remove(i)
             # Checking for collisions
             for j in players:
-                if (i.shape.colliderect(j.shape)  or upBlue.shape.colliderect(j.shape) or downBlue.shape.colliderect(j.shape)):
+                if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
                     screen.blit(tFailed,(200,150))
                     isDead = True
         pygame.display.flip()
@@ -436,7 +445,7 @@ while running:
             running = False
     if keys[pygame.K_ESCAPE]:
         running = False
-    if keys[pygame.K_SPACE] and not isPause:
+    if keys[configs["restart"]] and not isPause:
         restart()
     if not isDead and not isPause:
         counter += 1
