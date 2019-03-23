@@ -4,6 +4,7 @@
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/ImageBackGround.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ImageBackGround.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="17">
-                <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+              <first_editor relative-caret-position="171">
+                <caret line="381" column="59" selection-start-line="381" selection-start-column="53" selection-end-line="381" selection-end-column="59" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -33,13 +34,13 @@
         <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+              <first_editor relative-caret-position="357">
+                <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor />
+              <second_editor relative-caret-position="-17" />
             </state>
           </provider>
         </entry>
@@ -68,7 +69,6 @@
       <find>K_DOWN</find>
       <find>K_</find>
       <find>seed</find>
-      <find>restart</find>
       <find>bCont</find>
       <find>&quot;settings</find>
       <find>pygame.ini</find>
@@ -80,12 +80,13 @@
       <find>seedWind</find>
       <find>withdraw</find>
       <find>.pack</find>
-      <find>player =</find>
       <find>BLACK</find>
       <find>BLUE</find>
       <find>blit</find>
       <find>RED</find>
       <find>Block(</find>
+      <find>restart</find>
+      <find>upBlue</find>
     </findStrings>
     <replaceStrings>
       <replace>randint</replace>
@@ -139,9 +140,9 @@
         <option value="$PROJECT_DIR$/myThread.py" />
         <option value="$PROJECT_DIR$/Block.py" />
         <option value="$PROJECT_DIR$/myCheckbox.py" />
-        <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
         <option value="$PROJECT_DIR$/Classes/ImageBlock.py" />
         <option value="$PROJECT_DIR$/Classes/Block.py" />
+        <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -165,6 +166,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,7 +194,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -334,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553028536776</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Change color">
+      <created>1553101942731</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1553101942731</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -344,14 +352,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993395" weight="0.33065596" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993395" weight="0.39892906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -376,7 +383,8 @@
     <MESSAGE value="Making keys from a dictionary, preparing to do a change controls settings" />
     <MESSAGE value="Configurable controls!" />
     <MESSAGE value="x" />
-    <option name="LAST_COMMIT_MESSAGE" value="x" />
+    <MESSAGE value="Change color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change color" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -493,16 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor>
-            <caret column="13" selection-start-column="13" selection-end-column="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -533,24 +531,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="153">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Classes/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <first_editor relative-caret-position="357">
+            <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor />
+          <second_editor relative-caret-position="-17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="17">
-            <caret line="127" column="34" selection-start-line="127" selection-start-column="34" selection-end-line="127" selection-end-column="34" />
+          <first_editor relative-caret-position="171">
+            <caret line="381" column="59" selection-start-line="381" selection-start-column="53" selection-end-line="381" selection-end-column="59" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>

@@ -2,7 +2,7 @@ import pygame
 from pygame import Rect
 BLACK = (0,0,0)
 class Block(pygame.sprite.Sprite):
-    def __init__(self, color, screen, x, y, x0=32, y0=32,isPlayer = False,bg = BLACK, *groups,**kwargs):
+    def __init__(self, color, screen, x, y, x0=32, y0=32, isPlayer = False, bg = BLACK, *groups):
         super().__init__(*groups)
         self.x0 = x0
         self.y0 = y0
@@ -32,4 +32,5 @@ class Block(pygame.sprite.Sprite):
         print(self.groups)
         for i in self.__g:
             print(self.groups)
-            i.remove(self)
+            if not self.player:
+                i.remove(self)

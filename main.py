@@ -313,7 +313,7 @@ def restart(seed = None):
     players = []
     player = Block(colors["player"], screen, 0, 32, 28, 28, True,colors["bg"],players)
     if isPlayerTwo:
-        player2 = Block(colors["player2"], screen, 0, 32, 28, 28, True,players)
+        player2 = Block(colors["player2"], screen, 0, 32, 28, 28, True,colors["bg"],players)
         players.append(player2)
     players.append(player)
     running = True
