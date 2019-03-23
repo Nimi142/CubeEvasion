@@ -1,9 +1,13 @@
 # CubeEvasion
 
-You play as a cube and you need not to touch any other cube!
+Play as a red cube and evade the blue cubes.
 
 __Features:__
 
-*Space* to restart game
+__Space__ to restart game
 
-*p* to add/remove player 2!
+__P__ to add/remove player 2!
+
+__R__ to pause
+
+__`__ to open settings
