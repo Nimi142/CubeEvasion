@@ -18,7 +18,7 @@ class Block(pygame.sprite.Sprite):
         self.shape = Rect(self.x,self.y,self.x0,self.y0)
     def draw(self,screen):
         pygame.draw.rect(screen,self.color,self.shape)
-        pygame.display.flip()
+        # pygame.display.flip()
     def update(self, x_speed,y_speed):
         pygame.draw.rect(self.screen,self.bg,self.shape)
         self.x += x_speed

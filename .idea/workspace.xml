@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +18,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="118">
-                <caret line="358" column="109" selection-start-line="358" selection-start-column="109" selection-end-line="358" selection-end-column="109" />
+              <first_editor relative-caret-position="98">
+                <caret line="437" column="47" lean-forward="true" selection-start-line="437" selection-start-column="47" selection-end-line="437" selection-end-column="47" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -32,13 +33,13 @@
         <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="374">
-                <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+              <first_editor relative-caret-position="170">
+                <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor />
+              <second_editor relative-caret-position="-119" />
             </state>
           </provider>
         </entry>
@@ -55,10 +56,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bCont</find>
-      <find>&quot;settings</find>
-      <find>pygame.ini</find>
-      <find>screen</find>
       <find>pygame.image</find>
       <find>png</find>
       <find>main = Tk()</find>
@@ -85,9 +82,12 @@
       <find>makeCol</find>
       <find>player2 =</find>
       <find>score</find>
+      <find>display.flip()</find>
+      <find>d</find>
+      <find>while</find>
+      <find>timefont</find>
     </findStrings>
     <replaceStrings>
-      <replace>nRule</replace>
       <replace>cSatate</replace>
       <replace>elif cState[i-1] and cState[i-1] and cState[i-1] == False</replace>
       <replace>cState[i-1]</replace>
@@ -117,6 +117,7 @@
       <replace>K_r</replace>
       <replace>bg</replace>
       <replace>downBarrier</replace>
+      <replace>statsFont</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -139,9 +140,9 @@
         <option value="$PROJECT_DIR$/Block.py" />
         <option value="$PROJECT_DIR$/myCheckbox.py" />
         <option value="$PROJECT_DIR$/Classes/ImageBlock.py" />
-        <option value="$PROJECT_DIR$/Classes/Block.py" />
         <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/Classes/Block.py" />
       </list>
     </option>
   </component>
@@ -153,8 +154,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="740" />
-    <option name="y" value="280" />
+    <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1090" />
   </component>
@@ -361,7 +361,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553344271407</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Text might flicker less">
+      <created>1553344772039</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1553344772039</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -407,7 +414,8 @@
     <MESSAGE value="Chnaged color scheme and added restart and space to control layout changing" />
     <MESSAGE value="fixed bug of ai block fill not changing" />
     <MESSAGE value="AI will now not colide with player2 after it has been disabled. Score divided by 200" />
-    <option name="LAST_COMMIT_MESSAGE" value="AI will now not colide with player2 after it has been disabled. Score divided by 200" />
+    <MESSAGE value="Text might flicker less" />
+    <option name="LAST_COMMIT_MESSAGE" value="Text might flicker less" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -567,13 +575,13 @@
     <entry file="file://$PROJECT_DIR$/Classes/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="374">
-            <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <first_editor relative-caret-position="170">
+            <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor />
+          <second_editor relative-caret-position="-119" />
         </state>
       </provider>
     </entry>
@@ -588,8 +596,8 @@
       </provider>
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="118">
-            <caret line="358" column="109" selection-start-line="358" selection-start-column="109" selection-end-line="358" selection-end-column="109" />
+          <first_editor relative-caret-position="98">
+            <caret line="437" column="47" lean-forward="true" selection-start-line="437" selection-start-column="47" selection-end-line="437" selection-end-column="47" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>

@@ -355,14 +355,14 @@ timefont = pygame.font.SysFont('Consolas', 13)
 tPause = failFont.render("PAUSE",True,RED)
 counter = 0
 score = 0
-
+tTime = timefont.render("0",True,RED)
+tScore = timefont.render("0",True,RED)
 
 # Run loop:
 while running:
     # Blitting "pause" if paused
     if isPause:
         screen.blit(tPause,(200,150))
-        pygame.display.flip()
     # Getting pressed keys:
     keys = pygame.key.get_pressed()
     player.draw(screen)
@@ -371,11 +371,13 @@ while running:
         SCROLL_SPEED += 0.001
     pygame.time.delay(16)
     if not isDead:
+        upBarrier.draw(screen)
+        screen.blit(tTime, (10, 10))
+        screen.blit(tScore, (600, 10))
         # Making new blocks:
         if counter % 64 == 0:
             blocks.extend(makeCol(33,8))
         # Drawing upper borders:
-        upBarrier.draw(screen)
         # Changing text of Score and Time and blitting them:
         tScore = timefont.render("Score: " + str(round(score,0)/500), True, RED)
         tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
@@ -389,12 +391,10 @@ while running:
                 if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
                     screen.blit(tFailed,(200,150))
                     isDead = True
-        pygame.display.flip()
         # Opening seed if needed
         if keys[configs["settings"]]:
             isPause = True
             screen.blit(tPause,(200,150))
-            pygame.display.flip()
             print("Opening main")
             main.deiconify()
             seedWindow.withdraw()
@@ -438,8 +438,6 @@ while running:
                 player2.update(PLAYER_SPEED, 0)
             if keys[configs["2left"]]:
                 player2.update(-PLAYER_SPEED, 0)
-    screen.blit(tTime, (10, 10))
-    screen.blit(tScore, (600, 10))
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -450,4 +448,5 @@ while running:
     if not isDead and not isPause:
         counter += 1
         score += len(blocks)
+    pygame.display.flip()
 
