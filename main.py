@@ -5,7 +5,6 @@ from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
 from io import BytesIO
 from base64 import b64decode
-from Classes.Imageblock import ImageBlock
 GRAY = (63,63,63)
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -340,8 +339,6 @@ screen = pygame.display.set_mode((800, TOTAL_H))
 players = []
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"],players)
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
-powerUp1 = ImageBlock("https://raw.githubusercontent.com/Nimi142/CubeEvasion/master/res/images/Timer.png",[32,64],colors["bg"],1)
-powerUp1.draw(screen)
 players.append(player)
 isPlayerTwo = False
 isPause = False
@@ -350,7 +347,6 @@ isDead = False
 start = time()
 time_since_change = 0
 blocks = []
-powerups =[]
 upBarrier = Block(GRAY,screen, 0,0,TOTAL_W)
 downBarrier = Block(GRAY,screen, 0,TOTAL_H - 32,TOTAL_W)
 upBarrier.draw(screen)

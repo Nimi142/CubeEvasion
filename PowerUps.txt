@@ -1,3 +1,0 @@
-PowerUps:
-
-1. Timer: halves scroll speed of blocks.
