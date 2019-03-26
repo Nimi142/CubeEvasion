@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Classes/Imageblock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Classes/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +17,8 @@
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="256">
-                <caret line="350" column="46" lean-forward="true" selection-start-line="350" selection-start-column="46" selection-end-line="350" selection-end-column="46" />
+              <first_editor relative-caret-position="-969">
+                <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -29,17 +28,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="379">
+              <first_editor relative-caret-position="272">
                 <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
-              <second_editor relative-caret-position="-97" />
+              <second_editor relative-caret-position="-119" />
             </state>
           </provider>
         </entry>
@@ -48,8 +47,20 @@
         <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
-              <first_editor relative-caret-position="102">
-                <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <first_editor relative-caret-position="119">
+                <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/Imageblock.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="170">
+                <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
               </first_editor>
               <second_editor />
             </state>
@@ -155,6 +166,7 @@
         <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Classes/Block.py" />
+        <option value="$PROJECT_DIR$/Classes/Imageblock.py" />
       </list>
     </option>
   </component>
@@ -176,7 +188,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -204,6 +215,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -394,7 +406,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553371663021</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Adding barriers">
+      <created>1553626876186</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1553626876186</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -411,7 +430,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993395" weight="0.33065596" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993395" weight="0.39892906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -443,7 +462,8 @@
     <MESSAGE value="Text might flicker less" />
     <MESSAGE value="Text should not flicker" />
     <MESSAGE value="update readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="update readme" />
+    <MESSAGE value="Adding barriers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding barriers" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -551,7 +571,6 @@
     <entry file="file://$PROJECT_DIR$/local-filename.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImageBlock.py" />
     <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
@@ -590,29 +609,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
+    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="102">
-            <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="256">
-            <caret line="350" column="46" lean-forward="true" selection-start-line="350" selection-start-column="46" selection-end-line="350" selection-end-column="46" />
+          <first_editor relative-caret-position="272">
+            <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
@@ -621,16 +622,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
-          <first_editor relative-caret-position="379">
-            <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+          <first_editor relative-caret-position="119">
+            <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="-969">
+            <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
-          <second_editor relative-caret-position="-97" />
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Imageblock.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="170">
+            <caret line="10" column="49" lean-forward="true" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
