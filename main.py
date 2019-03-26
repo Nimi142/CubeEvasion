@@ -173,7 +173,7 @@ e2Down.insert(0,"s")
 e2Left = Entry(controlsWindow)
 e2Left.insert(0,"a")
 e2Right = Entry(controlsWindow)
-e2Right.insert(0,"f")
+e2Right.insert(0,"d")
 eChangeP2 = Entry(controlsWindow)
 eChangeP2.insert(0,"p")
 ePause = Entry(controlsWindow)
@@ -380,7 +380,7 @@ while running:
         # Drawing upper borders:
         # Changing text of Score and Time and blitting them:
         tScore = timefont.render("Score: " + str(round(score,0)/500), True, RED)
-        tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: "+ str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
+        tTime = timefont.render("seed: "+str(r) + ", Scroll Speed: " + str(round(SCROLL_SPEED,3)) , True, (255, 0, 0))
         # Updating position of Blocks:
         for i in blocks:
             i.update(-SCROLL_SPEED,0)
@@ -433,7 +433,7 @@ while running:
             if keys[configs["2up"]]:
                 player2.update(0, -PLAYER_SPEED)
             if keys[configs["2down"]]:
-                player2.update(0, PLAYER_SPEED)
+                player2.update(0, 2+PLAYER_SPEED)
             if keys[configs["2right"]]:
                 player2.update(PLAYER_SPEED, 0)
             if keys[configs["2left"]]:
