@@ -3,6 +3,7 @@ from time import time
 from Classes.Block import Block
 from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
+from Classes.Imageblock import ImageBlock
 from io import BytesIO
 from base64 import b64decode
 GRAY = (63,63,63)
@@ -34,12 +35,15 @@ pygame.display.set_icon(logo)
 main.title("Cube Evasion: Settings")
 seedWindow.title("Cube Evasion: Seed")
 controlsWindow.title("Cube Evasion: Controls")
-
+# pygame.joystick.init()
+# pygame.joystick.Joystick(0)
 configs = { "up":pygame.K_UP, "down":pygame.K_DOWN,"left":pygame.K_LEFT,"right":pygame.K_RIGHT,"player2":pygame.K_p,"restart":pygame.K_SPACE,"pause":pygame.K_r,"settings":pygame.K_BACKQUOTE,"2up":pygame.K_w,
-            "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d}
-colors = {"player":(127,255,127),"player2":(127,127,255),"blocks":(127,127,127),"bg":BLACK,"up":GRAY,"down":GRAY}
-coloraKeys = ["player","player2","blocks","bg","up","down"]
-configsKeys = ["up","down","left","right","player2","pause","settings","2up","2down","2left","2right"]
+            "2down":pygame.K_s,"2left":pygame.K_a,"2right":pygame.K_d,"3up":pygame.K_y,
+            "3down":pygame.K_h,"3left":pygame.K_g,"3right":pygame.K_j}
+# "4up":pygame.K_w,"4down":pygame.K_s,"4left":pygame.K_a,"4right":pygame.K_d
+colors = {"player":(127,127,255),"player2":(255,127,127),"player3":(127,255,127),"player4":(255, 255, 102),"blocks":(127,127,127),"bg":BLACK,"up":GRAY,"down":GRAY}
+coloraKeys = ["player","player2","blocks","bg","up","down","player3","player4"]
+configsKeys = ["up","down","left","right","player2","pause","settings","2up","2down","2left","2right","3up","3down","3left","3right"]
 def confirmSeed():
     global eSeed
     global r
@@ -86,6 +90,10 @@ def confirmControls():
     configs["pause"] = l[9]
     configs["settings"] = l[10]
     configs["restart"] = l[11]
+    configs["3up"] = l[12]
+    configs["3down"] = l[13]
+    configs["3left"] = l[14]
+    configs["3right"] = l[15]
     controlsWindow.withdraw()
 def confirmSettings():
     main.withdraw()
@@ -174,6 +182,14 @@ e2Left = Entry(controlsWindow)
 e2Left.insert(0,"a")
 e2Right = Entry(controlsWindow)
 e2Right.insert(0,"d")
+e3Up = Entry(controlsWindow)
+e3Up.insert(0,"y")
+e3Down = Entry(controlsWindow)
+e3Down.insert(0,"h")
+e3Left = Entry(controlsWindow)
+e3Left.insert(0,"g")
+e3Right = Entry(controlsWindow)
+e3Right.insert(0,"j")
 eChangeP2 = Entry(controlsWindow)
 eChangeP2.insert(0,"p")
 ePause = Entry(controlsWindow)
@@ -182,9 +198,10 @@ eSettings = Entry(controlsWindow)
 eSettings.insert(0,"backquote")
 eRestart = Entry(controlsWindow)
 eRestart.insert(0,"space")
-listEntries = [eUp,eDown,eLeft,eRight,e2Up,e2Down,e2Left,e2Right,eChangeP2,ePause,eSettings,eRestart]
+listEntries = [eUp,eDown,eLeft,eRight,e2Up,e2Down,e2Left,e2Right,eChangeP2,ePause,eSettings,eRestart,e3Up,e3Down,e3Left,e3Right]
 lPlayer = Label(controlsWindow,text = "Player1: ")
 lPlayer2 = Label(controlsWindow,text = "Player2: ")
+lPlayer3 = Label(controlsWindow,text = "Player3:")
 lUp = Label(controlsWindow,text = "Up: ")
 lDown = Label(controlsWindow,text = "Down: ")
 lLeft = Label(controlsWindow,text = "Left: ")
@@ -193,6 +210,10 @@ l2Up = Label(controlsWindow,text = "Up: ")
 l2Down = Label(controlsWindow,text = "Down: ")
 l2Left = Label(controlsWindow,text = "Left: ")
 l2Right = Label(controlsWindow,text = "Right: ")
+l3Up = Label(controlsWindow,text = "Up: ")
+l3Down = Label(controlsWindow,text = "Down: ")
+l3Left = Label(controlsWindow,text = "Left: ")
+l3Right = Label(controlsWindow,text = "Right: ")
 lChangeP2 = Label(controlsWindow,text = "Change players: ")
 lPause = Label(controlsWindow,text = "Pause: ")
 lRestart = Label(controlsWindow,text = "Restart")
@@ -226,6 +247,16 @@ e2Right.grid(row = 4,column = 3)
 eSettings.grid(row = 6,column = 3)
 eRestart.grid(row = 7,column = 3)
 bConfirmControls.grid(column = 0,columnspan = 4,row = 8)
+lPlayer3.grid(row = 0,column = 4)
+l3Up.grid(row = 1,column = 4)
+l3Down.grid(row = 2,column = 4)
+l3Left.grid(row = 3,column = 4)
+l3Right.grid(row = 4,column = 4)
+e3Up.grid(row = 1,column = 5)
+e3Down.grid(row = 2,column = 5)
+e3Left.grid(row = 3,column = 5)
+e3Right.grid(row = 4,column = 5)
+
 #Seed window:
 label = Label(seedWindow,text = "Enter seed:")
 eSeed = Entry(seedWindow)
@@ -236,7 +267,7 @@ eSeed.pack()
 randseedCheck.pack()
 bSeed.pack()
 main.withdraw()
-isDebug = True
+isDebug = False
 transition = pygame.display.set_mode((400,400))
 try:
     TransitionImage = pygame.image.load("TransitionLogo.png")
@@ -293,6 +324,8 @@ def pause(screen):
 def restart(seed = None):
     global player
     global player2
+    global player3
+    global player4
     global blocks
     global running
     global isDead
@@ -305,6 +338,16 @@ def restart(seed = None):
     global isPause
     global screen
     global isRandSeed
+    players = []
+    player = Block(colors["player"], screen, 0, 32, 28, 28, True, colors["bg"], players)
+    player2 = Block(colors["player2"], screen, 0, 63, 28, 28, True, colors["bg"], players)
+    player3 = Block(colors["player3"], screen, 0, 95, 28, 28, True, colors["bg"], players)
+    player4 = Block(colors["player4"], screen, 0, 127, 28, 28, True, colors["bg"], players)
+    players.append(player)
+    if numPlayers > 1:
+        players.append(player2)
+    if numPlayers > 2:
+        players.append(player3)
     if isPause:
         pause(screen)
     score = 0
@@ -320,16 +363,12 @@ def restart(seed = None):
     screen.fill(colors["bg"])
     blocks = []
     players = []
-    player = Block(colors["player"], screen, 0, 32, 28, 28, True,colors["bg"],players)
-    if isPlayerTwo:
-        player2 = Block(colors["player2"], screen, 0, 32, 28, 28, True,colors["bg"],players)
-        players.append(player2)
-    players.append(player)
     running = True
     isDead = False
     upBarrier.draw(screen)
     downBarrier.draw(screen)
 
+numPlayers = 1
 pauseTime = 0
 failFont = pygame.font.SysFont('Arial', 52)
 tFailed = failFont.render('GAME OVER!', True, (255, 0, 0))
@@ -337,10 +376,12 @@ TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
 players = []
-player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"],players)
-player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
+player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"])
+player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"])
+player3 = Block(colors["player3"],screen,0,32,28,28,True,colors["bg"])
+player4 = Block(colors["player4"],screen,0,32,28,28,True,colors["bg"])
+powerup1 = ImageBlock("")
 players.append(player)
-isPlayerTwo = False
 isPause = False
 running = True
 isDead = False
@@ -388,7 +429,7 @@ while running:
                 blocks.remove(i)
             # Checking for collisions
             for j in players:
-                if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
+                if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)) and not isDebug:
                     screen.blit(tFailed,(200,150))
                     isDead = True
         # Opening seed if needed
@@ -414,20 +455,43 @@ while running:
         if keys[configs["left"]]:
             player.update(-PLAYER_SPEED,0)
         # Adding/ Removing Second player:
-        if pygame.key.get_pressed()[configs["player2"]] and time() - time_since_change > 1 and (not isPause):
+        if keys[pygame.K_1] and time() - time_since_change > 1 and (not isPause):
             time_since_change = time()
-            if isPlayerTwo:
-                isPlayerTwo = False
+            if player2 in players:
                 players.remove(player2)
                 player2.kill()
-            else:
+            if player3 in players:
+                players.remove(player3)
+                player3.kill()
+            numPlayers = 1
+        if keys[pygame.K_2] and time() - time_since_change > 1 and (not isPause):
+            time_since_change = time()
+            if numPlayers == 3:
+                player3.kill()
+                players.remove(player3)
+            if numPlayers == 1:
+                player2.x =0
+                player2.y = 32
+                player2.updateShape()
+                player2.draw(screen)
+                players.append(player2)
+            numPlayers = 2
+        if keys[pygame.K_3] and time() - time_since_change > 1 and (not isPause):
+            time_since_change = time()
+            if numPlayers == 1:
                 player2.x = 0
                 player2.y = 32
                 player2.updateShape()
                 player2.draw(screen)
-                isPlayerTwo = True
                 players.append(player2)
-        if isPlayerTwo and not isDead:
+            if numPlayers == 2:
+                player3.x = 0
+                player3.y = 32
+                player3.updateShape()
+                player3.draw(screen)
+                players.append(player3)
+            numPlayers = 3
+        if numPlayers > 1 and not isDead:
             # Checking for p2 movement:
             player2.draw(screen)
             if keys[configs["2up"]]:
@@ -438,6 +502,17 @@ while running:
                 player2.update(PLAYER_SPEED, 0)
             if keys[configs["2left"]]:
                 player2.update(-PLAYER_SPEED, 0)
+        if numPlayers > 2 and not isDead:
+            player3.draw(screen)
+            # Checking for p3 movement
+            if keys[configs["3up"]]:
+                player3.update(0, -PLAYER_SPEED)
+            if keys[configs["3down"]]:
+                player3.update(0, 2+PLAYER_SPEED)
+            if keys[configs["3right"]]:
+                player3.update(PLAYER_SPEED, 0)
+            if keys[configs["3left"]]:
+                player3.update(-PLAYER_SPEED, 0)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
