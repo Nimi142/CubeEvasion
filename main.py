@@ -376,13 +376,15 @@ TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
 players = []
+powerUps = []
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"])
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"])
 player3 = Block(colors["player3"],screen,0,32,28,28,True,colors["bg"])
 player4 = Block(colors["player4"],screen,0,32,28,28,True,colors["bg"])
-powerup1 = ImageBlock("https://raw.githubusercontent.com/Nimi142/CubeEvasion/master/res/images/Timer.png",64,32,[32,32])
+powerup1 = ImageBlock("https://raw.githubusercontent.com/Nimi142/CubeEvasion/master/res/images/Timer.png",1,32,32,colors["bg"],[32,32])
 powerup1.draw(screen)
 players.append(player)
+powerUps.append(powerup1)
 isPause = False
 running = True
 isDead = False
