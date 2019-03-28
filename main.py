@@ -6,8 +6,8 @@ from Classes.myCheckbox import *
 from Classes.Imageblock import ImageBlock
 from io import BytesIO
 from base64 import b64decode
+pygame.init()
 timer_url = "https://raw.githubusercontent.com/Nimi142/CubeEvasion/master/res/images/Timer.png"
-timer_image = pygame.image.load(BytesIO(urlopen(timer_url).read()))
 GRAY = (63,63,63)
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -20,7 +20,6 @@ SCROLL_SPEED = 4
 pSCROLL_SPEED = 4
 r = random.randint(0,1000)
 random.seed(r)
-pygame.init()
 main = Tk()
 seedWindow = Toplevel()
 controlsWindow = Toplevel()
@@ -382,6 +381,7 @@ tFailed = failFont.render('GAME OVER!', True, (255, 0, 0))
 TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
+timer_image = pygame.image.load(BytesIO(urlopen(timer_url).read())).convert_alpha()
 players = []
 powerUps = []
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"])
