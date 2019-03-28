@@ -289,7 +289,6 @@ else:
 # An idea for the randomizer, do it in batches and lkimit the number of blocks.
 
 def makeCol(x,amountCols):
-    global powerUps
     newBlocks = []
     blockPlacements = []
     for j in range(0,amountCols):
@@ -299,8 +298,6 @@ def makeCol(x,amountCols):
             if ry != 0:
                 blockPlacements.append((rx,ry))
     f = random.randint(0,10)
-    if f == 0:
-        powerUps.append(ImageBlock(timer_image,1,32,32,colors["bg"],[random.randint(x,x+amountCols)*32,random.randint(1,10)*32]))
     for i in range(0,len(blockPlacements)):
         newBlocks.append(Block(colors["blocks"],screen,blockPlacements[i][0]*32,blockPlacements[i][1]*32,32,32,False,colors["bg"]))
     return newBlocks
@@ -329,7 +326,6 @@ def pause(screen):
 
 def restart(seed = None):
     global player
-    global powerUps
     global player2
     global player3
     global player4
@@ -346,7 +342,6 @@ def restart(seed = None):
     global screen
     global isRandSeed
     players = []
-    powerUps = []
     player = Block(colors["player"], screen, 0, 32, 28, 28, True, colors["bg"], players)
     player2 = Block(colors["player2"], screen, 0, 63, 28, 28, True, colors["bg"], players)
     player3 = Block(colors["player3"], screen, 0, 95, 28, 28, True, colors["bg"], players)
@@ -383,7 +378,6 @@ TOTAL_H = 384
 TOTAL_W = 2048
 screen = pygame.display.set_mode((800, TOTAL_H))
 players = []
-powerUps = []
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"])
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"])
 player3 = Block(colors["player3"],screen,0,32,28,28,True,colors["bg"])
@@ -439,17 +433,6 @@ while running:
                 if (i.shape.colliderect(j.shape)) and not isDebug:
                     screen.blit(tFailed,(200,150))
                     isDead = True
-        for i in powerUps:
-            i.update(screen,-SCROLL_SPEED,0)
-            if i.rect.left == -32:
-                powerUps.remove(i)
-                i.erase(screen)
-            for j in players:
-                if i.rect.colliderect(j.shape):
-                    if i.job == 1:
-                        SCROLL_SPEED = 3/4*SCROLL_SPEED
-                        powerUps.remove(i)
-                        i.erase(screen)
         # Opening seed if needed
         if keys[configs["settings"]]:
             isPause = True
