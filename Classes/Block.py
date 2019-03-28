@@ -22,13 +22,9 @@ class Block(pygame.sprite.Sprite):
     def update(self, x_speed,y_speed):
         pygame.draw.rect(self.screen,self.bg,self.shape)
         self.x += x_speed
-        self.y += y_speed
         if self.x < 0 and self.player:
-            self.x = 0
-        if self.y < 32:
-            self.y = 32
-        if self.y > 324:
-            self.y = 324
+             self.x = 0
+        self.y += y_speed
         self.shape = Rect(self.x, self.y, self.x0, self.y0)
         pygame.draw.rect(self.screen,self.color,self.shape)
     def kill(self):
