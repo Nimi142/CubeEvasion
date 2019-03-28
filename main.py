@@ -312,6 +312,7 @@ def restart(seed = None):
     global screen
     global isRandSeed
 <<<<<<< HEAD
+<<<<<<< HEAD
     players = []
     powerUps = []
     player = Block(colors["player"], screen, 0, 32, 28, 28, True, colors["bg"], players)
@@ -323,6 +324,8 @@ def restart(seed = None):
         players.append(player2)
     if numPlayers > 2:
         players.append(player3)
+=======
+>>>>>>> parent of d621110... asyerert
 =======
 >>>>>>> parent of d621110... asyerert
     if isPause:
@@ -347,6 +350,9 @@ def restart(seed = None):
         player2 = Block(colors["player2"], screen, 0, 32, 28, 28, True,colors["bg"],players)
         players.append(player2)
     players.append(player)
+<<<<<<< HEAD
+>>>>>>> parent of d621110... asyerert
+=======
 >>>>>>> parent of d621110... asyerert
     running = True
     isDead = False
@@ -362,11 +368,16 @@ screen = pygame.display.set_mode((800, TOTAL_H))
 timer_image = pygame.image.load(BytesIO(urlopen(timer_url).read())).convert_alpha()
 players = []
 <<<<<<< HEAD
+<<<<<<< HEAD
 powerUps = []
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"])
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"])
 player3 = Block(colors["player3"],screen,0,32,28,28,True,colors["bg"])
 player4 = Block(colors["player4"],screen,0,32,28,28,True,colors["bg"])
+=======
+player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"],players)
+player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
+>>>>>>> parent of d621110... asyerert
 =======
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"],players)
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
@@ -421,7 +432,11 @@ while running:
             # Checking for collisions
             for j in players:
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (i.shape.colliderect(j.shape)) and not isDebug:
+=======
+                if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
+>>>>>>> parent of d621110... asyerert
 =======
                 if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
 >>>>>>> parent of d621110... asyerert
