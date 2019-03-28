@@ -5,8 +5,11 @@ from Classes.ImageBackGround import *
 from Classes.myCheckbox import *
 from io import BytesIO
 from base64 import b64decode
+<<<<<<< HEAD
 pygame.init()
 timer_url = "https://raw.githubusercontent.com/Nimi142/CubeEvasion/master/res/images/Timer.png"
+=======
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
 GRAY = (63,63,63)
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
@@ -257,7 +260,6 @@ else:
 # An idea for the randomizer, do it in batches and lkimit the number of blocks.
 
 def makeCol(x,amountCols):
-    global powerUps
     newBlocks = []
     blockPlacements = []
     for j in range(0,amountCols):
@@ -266,9 +268,6 @@ def makeCol(x,amountCols):
             rx = random.randint(x,x+amountCols)
             if ry != 0:
                 blockPlacements.append((rx,ry))
-    f = random.randint(0,10)
-    if f == 0:
-        powerUps.append(ImageBlock(timer_image,1,32,32,colors["bg"],[random.randint(x,x+amountCols)*32,random.randint(1,10)*32]))
     for i in range(0,len(blockPlacements)):
         newBlocks.append(Block(colors["blocks"],screen,blockPlacements[i][0]*32,blockPlacements[i][1]*32,32,32,False,colors["bg"]))
     return newBlocks
@@ -297,7 +296,6 @@ def pause(screen):
 
 def restart(seed = None):
     global player
-    global powerUps
     global player2
     global blocks
     global running
@@ -314,7 +312,6 @@ def restart(seed = None):
 <<<<<<< HEAD
 <<<<<<< HEAD
     players = []
-    powerUps = []
     player = Block(colors["player"], screen, 0, 32, 28, 28, True, colors["bg"], players)
     player2 = Block(colors["player2"], screen, 0, 63, 28, 28, True, colors["bg"], players)
     player3 = Block(colors["player3"], screen, 0, 95, 28, 28, True, colors["bg"], players)
@@ -343,6 +340,7 @@ def restart(seed = None):
     screen.fill(colors["bg"])
     blocks = []
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     players = []
     player = Block(colors["player"], screen, 0, 32, 28, 28, True,colors["bg"],players)
@@ -354,6 +352,9 @@ def restart(seed = None):
 >>>>>>> parent of d621110... asyerert
 =======
 >>>>>>> parent of d621110... asyerert
+=======
+    players = []
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
     running = True
     isDead = False
     upBarrier.draw(screen)
@@ -374,6 +375,7 @@ player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"])
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"])
 player3 = Block(colors["player3"],screen,0,32,28,28,True,colors["bg"])
 player4 = Block(colors["player4"],screen,0,32,28,28,True,colors["bg"])
+<<<<<<< HEAD
 =======
 player = Block(colors["player"], screen, 0,32,28,28,True,colors["bg"],players)
 player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
@@ -384,6 +386,12 @@ player2 = Block(colors["player2"],screen,0,32,28,28,True,colors["bg"],players)
 >>>>>>> parent of d621110... asyerert
 players.append(player)
 isPlayerTwo = False
+=======
+powerup1 = ImageBlock("https://raw.githubusercontent.com/Nimi142/CubeEvasion/master/res/images/Timer.png",1,32,32,colors["bg"],[32,32])
+powerup1.draw(screen)
+players.append(player)
+powerUps.append(powerup1)
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
 isPause = False
 running = True
 isDead = False
@@ -433,6 +441,7 @@ while running:
             for j in players:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 if (i.shape.colliderect(j.shape)) and not isDebug:
 =======
                 if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
@@ -440,19 +449,11 @@ while running:
 =======
                 if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)):
 >>>>>>> parent of d621110... asyerert
+=======
+                if (i.shape.colliderect(j.shape)  or upBarrier.shape.colliderect(j.shape) or downBarrier.shape.colliderect(j.shape)) and not isDebug:
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
                     screen.blit(tFailed,(200,150))
                     isDead = True
-        for i in powerUps:
-            i.update(screen,-SCROLL_SPEED,0)
-            if i.rect.left == -32:
-                powerUps.remove(i)
-                i.erase(screen)
-            for j in players:
-                if i.rect.colliderect(j.shape):
-                    if i.job == 1:
-                        SCROLL_SPEED = 3/4*SCROLL_SPEED
-                        powerUps.remove(i)
-                        i.erase(screen)
         # Opening seed if needed
         if keys[configs["settings"]]:
             isPause = True

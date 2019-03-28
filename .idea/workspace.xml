@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="" />
 =======
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
 <<<<<<< HEAD
+=======
+    <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="Adding timer">
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
 =======
@@ -17,10 +21,14 @@
       <change beforePath="$PROJECT_DIR$/Classes/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
 >>>>>>> parent of d621110... asyerert
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+<<<<<<< HEAD
 =======
       <change afterPath="$PROJECT_DIR$/Classes/Imageblock.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 >>>>>>> parent of f1c2cdf... s
+=======
+      <change beforePath="$PROJECT_DIR$/res/images/Timer.png" beforeDir="false" afterPath="$PROJECT_DIR$/res/images/Timer.png" afterDir="false" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
     </list>
 >>>>>>> parent of 0f63446... Starting to work on powerups
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,10 +39,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -63,6 +72,10 @@
               <first_editor relative-caret-position="98">
                 <caret line="437" column="47" lean-forward="true" selection-start-line="437" selection-start-column="47" selection-end-line="437" selection-end-column="47" />
 >>>>>>> parent of 0753211... Adding barriers
+=======
+              <first_editor relative-caret-position="167">
+                <caret line="383" column="21" lean-forward="true" selection-start-line="383" selection-start-column="21" selection-end-line="383" selection-end-column="21" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
@@ -76,6 +89,7 @@
         <entry file="file://$PROJECT_DIR$/Classes/Block.py">
           <provider selected="true" editor-type-id="live-pycharm">
             <state>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -93,10 +107,15 @@
               <first_editor relative-caret-position="170">
                 <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
 >>>>>>> parent of 0753211... Adding barriers
+=======
+              <first_editor relative-caret-position="85">
+                <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
                 <folding>
                   <element signature="e#0#13#0" expanded="true" />
                 </folding>
               </first_editor>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -107,10 +126,14 @@
 =======
               <second_editor relative-caret-position="-97" />
 >>>>>>> parent of d621110... asyerert
+=======
+              <second_editor />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
           <provider selected="true" editor-type-id="live-pycharm">
@@ -130,6 +153,14 @@
               <first_editor relative-caret-position="221">
                 <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
 >>>>>>> parent of d621110... asyerert
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/Imageblock.py">
+          <provider selected="true" editor-type-id="live-pycharm">
+            <state>
+              <first_editor relative-caret-position="289">
+                <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
                 <folding>
                   <element signature="e#0#25#0" expanded="true" />
                 </folding>
@@ -182,6 +213,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of d621110... asyerert
@@ -200,11 +232,16 @@
       <find>Block(</find>
       <find>restart</find>
       <find>upBlue</find>
+=======
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
       <find>150,</find>
       <find>player</find>
       <find>s</find>
       <find>pygame.K_Space</find>
+<<<<<<< HEAD
       <find>listEntries</find>
+=======
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
       <find>control</find>
       <find>backquote</find>
 >>>>>>> parent of d621110... asyerert
@@ -225,6 +262,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
       <find>colors[&quot;bg&quot;]</find>
+      <find>screen.blit</find>
       <find>powerUp1</find>
       <find>player =</find>
       <find>player3</find>
@@ -233,11 +271,14 @@
       <find>numPla</find>
       <find>players</find>
       <find>Powe</find>
+<<<<<<< HEAD
       <find>screen.blit</find>
       <find>isDEbug</find>
       <find>githu</find>
       <find>erase</find>
       <find>timer_</find>
+=======
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
       <find>ImageBlock</find>
       <find>isDebug</find>
       <find>screen</find>
@@ -309,6 +350,7 @@
 =======
 >>>>>>> parent of d621110... asyerert
         <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Classes/Block.py" />
 <<<<<<< HEAD
@@ -322,6 +364,10 @@
 =======
         <option value="$PROJECT_DIR$/Classes/Imageblock.py" />
 >>>>>>> parent of f1c2cdf... s
+=======
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/Classes/Imageblock.py" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
       </list>
     </option>
   </component>
@@ -579,6 +625,7 @@
       <option name="project" value="LOCAL" />
       <updated>1553695011516</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00022" summary="Changing timer">
       <created>1553695542883</created>
       <option name="number" value="00022" />
@@ -610,6 +657,9 @@
 =======
     <option name="localTasksCounter" value="18" />
 >>>>>>> parent of 0753211... Adding barriers
+=======
+    <option name="localTasksCounter" value="22" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
     <servers />
   </component>
   <component name="TestHistory">
@@ -620,12 +670,12 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993395" weight="0.39892906" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -662,6 +712,7 @@
 <<<<<<< HEAD
     <MESSAGE value="Adding barriers" />
     <MESSAGE value="Adding timer" />
+<<<<<<< HEAD
     <MESSAGE value="Changing timer" />
     <MESSAGE value="Working on powerups" />
     <MESSAGE value="Started testing of slow blocks powerup" />
@@ -675,6 +726,9 @@
 =======
     <option name="LAST_COMMIT_MESSAGE" value="Text might flicker less" />
 >>>>>>> parent of 0753211... Adding barriers
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="Adding timer" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -823,6 +877,7 @@
     </entry>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/PowerUps.txt" />
     <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
 =======
@@ -830,6 +885,8 @@
 =======
 >>>>>>> parent of d621110... asyerert
 <<<<<<< HEAD
+=======
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
     <entry file="file://$PROJECT_DIR$/PowerUps.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -837,16 +894,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
           <first_editor relative-caret-position="136">
             <caret line="8" column="38" lean-forward="true" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+=======
+    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+            <folding>
+              <element signature="e#0#13#0" expanded="true" />
+            </folding>
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
 =======
 >>>>>>> parent of f1c2cdf... s
     <entry file="file://$PROJECT_DIR$/Classes/Block.py">
@@ -858,10 +927,18 @@
         <state>
           <first_editor relative-caret-position="272">
             <caret line="28" column="23" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
+=======
+    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="85">
+            <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
             <folding>
               <element signature="e#0#13#0" expanded="true" />
             </folding>
           </first_editor>
+<<<<<<< HEAD
           <second_editor relative-caret-position="-119" />
         </state>
       </provider>
@@ -882,8 +959,19 @@
           <first_editor relative-caret-position="221">
             <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
 >>>>>>> parent of d621110... asyerert
+=======
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="live-pycharm">
+        <state>
+          <first_editor relative-caret-position="167">
+            <caret line="383" column="21" lean-forward="true" selection-start-line="383" selection-start-column="21" selection-end-line="383" selection-end-column="21" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
             <folding>
-              <element signature="e#0#25#0" expanded="true" />
+              <element signature="e#0#13#0" expanded="true" />
             </folding>
 =======
     <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
@@ -902,6 +990,7 @@
             <caret line="9" selection-start-line="9" selection-end-line="9" />
 >>>>>>> parent of 0753211... Adding barriers
           </first_editor>
+<<<<<<< HEAD
           <second_editor relative-caret-position="-92" />
         </state>
       </provider>
@@ -962,6 +1051,11 @@
 =======
 >>>>>>> parent of 0753211... Adding barriers
     <entry file="file://$PROJECT_DIR$/main.py">
+=======
+          <second_editor relative-caret-position="-119" />
+        </state>
+      </provider>
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
       <provider editor-type-id="text-editor">
         <state relative-caret-position="-21">
           <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
@@ -1005,17 +1099,28 @@
 >>>>>>> parent of d621110... asyerert
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Classes/Imageblock.py">
       <provider selected="true" editor-type-id="live-pycharm">
         <state>
+<<<<<<< HEAD
           <first_editor relative-caret-position="157">
             <caret line="383" column="83" selection-start-line="383" selection-start-column="83" selection-end-line="383" selection-end-column="83" />
+=======
+          <first_editor relative-caret-position="289">
+            <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
             <folding>
-              <element signature="e#0#13#0" expanded="true" />
+              <element signature="e#0#25#0" expanded="true" />
             </folding>
           </first_editor>
+<<<<<<< HEAD
           <second_editor relative-caret-position="-119" />
 =======
 >>>>>>> parent of d621110... asyerert
+=======
+          <second_editor />
+>>>>>>> parent of 28463f7... Started testing of slow blocks powerup
         </state>
       </provider>
     </entry>
