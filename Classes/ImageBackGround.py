@@ -1,5 +1,4 @@
 import pygame
-from urllib.request import urlopen
 
 
 class ImageBackground(pygame.sprite.Sprite):

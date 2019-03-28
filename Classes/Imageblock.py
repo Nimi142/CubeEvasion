@@ -1,4 +1,5 @@
 from Classes import Block
+<<<<<<< HEAD
 import pygame
 from urllib.request import urlopen
 from Classes.Block import Block
@@ -6,6 +7,12 @@ from io import BytesIO
 BLACK = (0,0,0)
 class ImageBlock():
     def __init__(self, image, job, x, y, bg,location):
+=======
+
+
+class ImageBlock():
+    def __init__(self,image,x,y,color,location):
+>>>>>>> parent of d621110... asyerert
         self.image = image
         self.x = x
         self.y = y
