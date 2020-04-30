@@ -3,78 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5902e6-e688-416b-aed7-a6d53f685539" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Block.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Block.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/ImageBackGround.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/ImageBackGround.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Classes/Imageblock.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Imageblock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/myCheckbox.py" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/myCheckbox.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="154">
-                <caret line="301" column="14" lean-forward="true" selection-start-line="301" selection-start-column="14" selection-end-line="301" selection-end-column="14" />
-                <folding>
-                  <element signature="e#0#13#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor relative-caret-position="-119" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Block.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="68">
-                <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-                <folding>
-                  <element signature="e#0#13#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor relative-caret-position="-17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/Imageblock.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="136">
-                <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-                <folding>
-                  <element signature="e#0#25#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
-          <provider selected="true" editor-type-id="live-pycharm">
-            <state>
-              <first_editor relative-caret-position="85">
-                <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-                <folding>
-                  <element signature="e#0#13#0" expanded="true" />
-                </folding>
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -84,72 +22,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>backquote</find>
-      <find>up</find>
-      <find>downBlue</find>
-      <find>colors</find>
-      <find>makeCol</find>
-      <find>player2 =</find>
-      <find>score</find>
-      <find>display.flip()</find>
-      <find>d</find>
-      <find>while</find>
-      <find>timefont</find>
-      <find>screen.</find>
-      <find>collide</find>
-      <find>pygame.displa</find>
-      <find>colors[&quot;bg&quot;]</find>
-      <find>powerUp1</find>
-      <find>player =</find>
-      <find>player3</find>
-      <find>isPlayerTwo</find>
-      <find>listEntries</find>
-      <find>numPla</find>
-      <find>players</find>
-      <find>Powe</find>
-      <find>screen.blit</find>
-      <find>isDEbug</find>
-      <find>githu</find>
-      <find>isDebug</find>
-      <find>erase</find>
-      <find>timer_</find>
-      <find>ImageBlock</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>cSatate</replace>
-      <replace>elif cState[i-1] and cState[i-1] and cState[i-1] == False</replace>
-      <replace>cState[i-1]</replace>
-      <replace>nState</replace>
-      <replace>True</replace>
-      <replace>nState[i] = False</replace>
-      <replace>cState[0]</replace>
-      <replace>is</replace>
-      <replace>ls[0</replace>
-      <replace>ls[1]</replace>
-      <replace>ls[0]</replace>
-      <replace>PlayerBlock</replace>
-      <replace>for x in range(1,len(lvl))</replace>
-      <replace>for y in range(1,len(lvl[x])):</replace>
-      <replace>for x in range(0,len(lvl)):</replace>
-      <replace>for y in range(0,len(lvl[x])):</replace>
-      <replace>self</replace>
-      <replace>self.screen</replace>
-      <replace>Block.Block(</replace>
-      <replace>draw(screen</replace>
-      <replace>Transition</replace>
-      <replace>amountCols</replace>
-      <replace>makeCol</replace>
-      <replace>round(time()-start,3)</replace>
-      <replace>K_LSHIFT</replace>
-      <replace>K_BACKQUOTE</replace>
-      <replace>K_r</replace>
-      <replace>bg</replace>
-      <replace>downBarrier</replace>
-      <replace>statsFont</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
@@ -158,26 +30,6 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/functions.py" />
-        <option value="$PROJECT_DIR$/ca4r.py" />
-        <option value="$PROJECT_DIR$/ImageBackGround.py" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/threading.py" />
-        <option value="$PROJECT_DIR$/myThread.py" />
-        <option value="$PROJECT_DIR$/Block.py" />
-        <option value="$PROJECT_DIR$/myCheckbox.py" />
-        <option value="$PROJECT_DIR$/Classes/ImageBlock.py" />
-        <option value="$PROJECT_DIR$/PowerUps.txt" />
-        <option value="$PROJECT_DIR$/Classes/Block.py" />
-        <option value="$PROJECT_DIR$/Classes/ImageBackGround.py" />
-        <option value="$PROJECT_DIR$/Classes/Imageblock.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
       <list>
@@ -185,49 +37,22 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="980" />
-    <option name="height" value="1090" />
-  </component>
+  <component name="ProjectId" id="1WWVLIbluRbjhPZo1gjarjdYSeI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CubeEvasion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CubeEvasion" type="462c0819:PsiDirectoryNode" />
-              <item name="Classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CubeEvasion" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CubeEvasion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CubeEvasion" type="462c0819:PsiDirectoryNode" />
-              <item name="res" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -235,18 +60,6 @@
       <recent name="C:\Users\rappa\PycharmProjects\CubeEvasion\res\images" />
       <recent name="C:\Users\rappa\PycharmProjects\CubeEvasion\Classes" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python">
@@ -261,6 +74,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -281,6 +95,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1547565105412</updated>
+      <workItem from="1585157694502" duration="39000" />
+      <workItem from="1585215961224" duration="2776000" />
+      <workItem from="1585511868350" duration="8000" />
+      <workItem from="1588241542240" duration="309000" />
     </task>
     <task id="LOCAL-00001" summary="s">
       <created>1552587329092</created>
@@ -443,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553696429057</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Eliminating powerups.">
+      <created>1553810112463</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1553810112463</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -451,28 +276,8 @@
       <configuration name="Unnamed" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19154558" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32931727" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993395" visible="true" weight="0.33065596" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4993395" weight="0.39892906" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5006605" side_tool="true" weight="0.39892906" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="s" />
@@ -496,212 +301,77 @@
     <MESSAGE value="Adding timer" />
     <MESSAGE value="Changing timer" />
     <MESSAGE value="Working on powerups" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on powerups" />
+    <MESSAGE value="Eliminating powerups." />
+    <option name="LAST_COMMIT_MESSAGE" value="Eliminating powerups." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="636" y="219" key="FileChooserDialogImpl" timestamp="1585157730913">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="636" y="219" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1585157730913" />
+    <state x="1060" y="276" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1579265487683" />
+    <state width="2517" height="345" key="GridCell.Tab.0.bottom" timestamp="1585218739716">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739716" />
+    <state width="2539" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1579265488685" />
+    <state width="2517" height="345" key="GridCell.Tab.0.center" timestamp="1585218739716">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739716" />
+    <state width="2539" height="282" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1579265488685" />
+    <state width="2517" height="345" key="GridCell.Tab.0.left" timestamp="1585218739716">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739716" />
+    <state width="2539" height="282" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1579265488685" />
+    <state width="2517" height="345" key="GridCell.Tab.0.right" timestamp="1585218739716">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739716" />
+    <state width="2539" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1579265488685" />
+    <state width="2517" height="345" key="GridCell.Tab.1.bottom" timestamp="1585218739717">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739717" />
+    <state width="2517" height="345" key="GridCell.Tab.1.center" timestamp="1585218739717">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739717" />
+    <state width="2517" height="345" key="GridCell.Tab.1.left" timestamp="1585218739716">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739716" />
+    <state width="2517" height="345" key="GridCell.Tab.1.right" timestamp="1585218739717">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state width="1515" height="260" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2560.1040@0.0.1536.824" timestamp="1584890072217" />
+    <state width="2517" height="345" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585218739717" />
+    <state x="2695" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1585511868512">
+      <screen x="1920" y="0" width="2560" height="1040" />
+    </state>
+    <state x="2695" y="298" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.2560.1040@1920.0.2560.1040" timestamp="1585511868512" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1585157694490" />
   </component>
   <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="j*height" language="Python" />
-        <watch expression="(j+1)*height" language="Python" />
-        <watch expression="nodes" language="Python" />
-        <watch expression="networkIdeas[i]" language="Python" />
-        <watch expression="networkIdeas[i].index(max(networkIdeas[i]))" language="Python" />
-        <watch expression="nodes" language="Python" />
-      </configuration>
-    </watches-manager>
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/main.py</url>
+          <line>315</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="breakpointCondition">
-      <expression>
-        <expression-string>IndexError: list index out of range</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-    </expressions>
-    <expressions id="watch">
-      <expression>
-        <expression-string>nodes</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>networkIdeas[i].index(max(networkIdeas[i]))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>networkIdeas[i]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>(j+1)*height</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>j*height</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharmCE2018.2/system/python_stubs/-982293864/builtins.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="158">
-            <caret line="3704" column="8" selection-end-line="5858" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/networkx/classes/graph.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="-7663">
-            <caret line="1248" selection-start-line="1248" selection-end-line="1248" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/random.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="3604">
-            <caret line="221" selection-start-line="221" selection-end-line="221" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="3553">
-            <caret line="210" selection-end-line="493" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ca4r.py" />
-    <entry file="file://$PROJECT_DIR$/AtariLogo.png" />
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/threading.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="99">
-            <caret line="853" column="8" selection-start-line="853" selection-start-column="8" selection-end-line="853" selection-end-column="8" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/myThread.py" />
-    <entry file="file://$PROJECT_DIR$/local-filename.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/myCheckbox.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pygame/sprite.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="3366">
-            <caret line="201" selection-start-line="201" selection-end-line="201" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="1394">
-            <caret line="2143" column="4" selection-start-line="2143" selection-start-column="4" selection-end-line="2143" selection-end-column="4" />
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="119">
-            <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PowerUps.txt" />
-    <entry file="file://$PROJECT_DIR$/Classes/ImageBackGround.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="85">
-            <caret line="5" column="42" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="42" />
-            <folding>
-              <element signature="e#0#13#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Block.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="68">
-            <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-            <folding>
-              <element signature="e#0#13#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Classes/Imageblock.py">
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-            <folding>
-              <element signature="e#0#25#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-21">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="live-pycharm">
-        <state>
-          <first_editor relative-caret-position="154">
-            <caret line="301" column="14" lean-forward="true" selection-start-line="301" selection-start-column="14" selection-end-line="301" selection-end-column="14" />
-            <folding>
-              <element signature="e#0#13#0" expanded="true" />
-            </folding>
-          </first_editor>
-          <second_editor relative-caret-position="-119" />
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CubeEvasion$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1588241629246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
